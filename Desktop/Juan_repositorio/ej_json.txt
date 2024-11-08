@@ -1,0 +1,712 @@
+// El controlador nos permite deserializar datos en la base de datos usando los dtos y el assembler para convertir los dtos a entidad y viceversa (serializar los datos de la base de datos en un archivo, deserializar de un archivo json a un objeto en la base de datos)
+
+
+
+
+Tambien podemos deserializar directamente en la entidad sin pasar a dto, en este caso no hace falta icluir los ids ya que se autogeneraran y tampoco debemos añadir los id de referencia
+
+
+deserializar directamente desde la entidad:
+
+
+{
+    "config": {
+        "description": "Main Config",
+        "is_custom": true,
+        "default_value": "Default",
+        "application_node": "Node1",
+        "parent": 0,
+        "attributes": [
+            {
+                "name": "Attribute 1",
+                "attributeType": {
+                    "enumDescription": "Type 1",
+                    "isEnum": true,
+                    "isList": false,
+                    "type": "String",
+                    "attributeTypeValues": [
+                        {
+                            "description": "Description for Value 1A",
+                            "value": "Value 1A"
+                        },
+                        {
+                            "description": "Description for Value 1B",
+                            "value": "Value 1B"
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "Attribute 2",
+                "attributeType": {
+                    "enumDescription": "Type 2",
+                    "isEnum": true,
+                    "isList": false,
+                    "type": "String",
+                    "attributeTypeValues": [
+                        {
+                            "description": "Description for Value 1C",
+                            "value": "Value 1C"
+                        },
+                        {
+                            "description": "Description for Value 1D",
+                            "value": "Value 1D"
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "Attribute 3",
+                "attributeType": {
+                    "enumDescription": "Type 3",
+                    "isEnum": true,
+                    "isList": false,
+                    "type": "String",
+                    "attributeTypeValues": [
+                        {
+                            "description": "Description for Value 1F",
+                            "value": "Value 1F"
+                        },
+                        {
+                            "description": "Description for Value 1G",
+                            "value": "Value 1G"
+                        },
+                        {
+                            "description": "Description for Value 1H",
+                            "value": "Value 1H"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+
+
+
+
+
+Serializar directamente desde la entidad:
+
+{
+  "configs" : [ {
+    "versionLock" : 2,
+    "deleted" : false,
+    "createdAt" : "2024-11-05T17:44:18.025Z",
+    "modifiedAt" : "2024-11-05T17:44:18.090Z",
+    "id" : 1,
+    "description" : "Main Config",
+    "isCustom" : true,
+    "defaultValue" : "Default",
+    "applicationNode" : "Node1",
+    "parent" : 0,
+    "attributes" : [ ]
+  } ]
+}
+
+porque habría que descomentar el resto de nodos que están comentados en el método serialice
+
+
+
+
+
+Serializar pasando por dto y usando los assemblers:
+
+{
+  "attributes" : [ {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 1,
+    "name" : "Attribute 1",
+    "attributeTypeId" : 1,
+    "configId" : null
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 2,
+    "name" : "Attribute 2",
+    "attributeTypeId" : 2,
+    "configId" : null
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 3,
+    "name" : "Attribute 3",
+    "attributeTypeId" : 3,
+    "configId" : null
+  } ],
+  "configs" : [ {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 1,
+    "description" : "Main Config",
+    "attributeIds" : [ ],
+    "is_custom" : true,
+    "default_value" : "Default",
+    "application_node" : "Node1",
+    "parent" : 0
+  } ],
+  "attributeTypes" : [ {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 1,
+    "enumDescription" : "Type 1",
+    "isEnum" : true,
+    "isList" : false,
+    "type" : "String",
+    "attributeIds" : [ 1 ],
+    "attributeTypeValueIds" : [ ]
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 2,
+    "enumDescription" : "Type 2",
+    "isEnum" : true,
+    "isList" : false,
+    "type" : "String",
+    "attributeIds" : [ 2 ],
+    "attributeTypeValueIds" : [ ]
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 3,
+    "enumDescription" : "Type 3",
+    "isEnum" : true,
+    "isList" : false,
+    "type" : "String",
+    "attributeIds" : [ 3 ],
+    "attributeTypeValueIds" : [ ]
+  } ],
+  "attributeTypeValues" : [ {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 1,
+    "description" : "Description for Value 1A",
+    "value" : "Value 1A",
+    "attributeTypeId" : null
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 2,
+    "description" : "Description for Value 1B",
+    "value" : "Value 1B",
+    "attributeTypeId" : null
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 3,
+    "description" : "Description for Value 1C",
+    "value" : "Value 1C",
+    "attributeTypeId" : null
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 4,
+    "description" : "Description for Value 1D",
+    "value" : "Value 1D",
+    "attributeTypeId" : null
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 5,
+    "description" : "Description for Value 1F",
+    "value" : "Value 1F",
+    "attributeTypeId" : null
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 6,
+    "description" : "Description for Value 1G",
+    "value" : "Value 1G",
+    "attributeTypeId" : null
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 7,
+    "description" : "Description for Value 1H",
+    "value" : "Value 1H",
+    "attributeTypeId" : null
+  } ]
+}
+
+como se puede apreciar faltan los id de referencia que relacionan las clases
+
+---------------------------------------------------
+
+
+
+La forma mas recomendada para deserializar es usar los DTOs que utilizan los Assemblers para convertir a entidad, de tal forma que nosotros introducimos los objetos separados por comas, y los ids de referencia que requieren cada uno y listo
+de esta manera quedan relacionadas las clases
+
+Deserializar usando DTOs:
+
+
+{
+    "config": {
+        "id": 1,
+        "description": "Main Config",
+        "is_custom": true,
+        "default_value": "Default",
+        "application_node": "Node1",
+        "parent": 0,
+        "attributeIds": [
+            1,
+            2,
+            3
+        ]
+    },
+
+    "attribute": [
+        {
+            "id": 1,
+            "name": "Attribute 1",
+            "attributeTypeId": 1,
+            "configId": 1
+        },
+        {
+            "id": 2,
+            "name": "Attribute 2",
+            "attributeTypeId": 2,
+            "configId": 1
+        },
+        {
+            "id": 3,
+            "name": "Attribute 3",
+            "attributeTypeId": 3,
+            "configId": 1
+        }
+    ],
+    "attributeType": [
+        {
+            "id": 1,
+            "enumDescription": "Type 1",
+            "isEnum": true,
+            "isList": false,
+            "type": "String",
+            "attributeTypeValueIds": [
+                1,
+                2
+            ]
+        },
+        {
+            "id": 2,
+            "enumDescription": "Type 2",
+            "isEnum": true,
+            "isList": false,
+            "type": "String",
+            "attributeTypeValueIds": [
+                3,
+                4
+            ]
+        },
+        {
+            "id": 3,
+            "enumDescription": "Type 3",
+            "isEnum": true,
+            "isList": false,
+            "type": "String",
+            "attributeTypeValueIds": [
+                5,
+                6,
+                7
+            ]
+        }
+    ],
+    "attributeTypeValue": [
+        {
+            "id": 1,
+            "description": "Description for Value 1A",
+            "value": "Value 1A",
+            "attributeTypeId": 1
+        },
+        {
+            "id": 2,
+            "description": "Description for Value 1B",
+            "value": "Value 1B",
+            "attributeTypeId": 1
+        },
+        {
+            "id": 3,
+            "description": "Description for Value 1C",
+            "value": "Value 1C",
+            "attributeTypeId": 2
+        },
+        {
+            "id": 4,
+            "description": "Description for Value 1D",
+            "value": "Value 1D",
+            "attributeTypeId": 2
+        },
+        {
+            "id": 5,
+            "description": "Description for Value 1F",
+            "value": "Value 1F",
+            "attributeTypeId": 3
+        },
+        {
+            "id": 6,
+            "description": "Description for Value 1G",
+            "value": "Value 1G",
+            "attributeTypeId": 3
+        },
+        {
+            "id": 7,
+            "description": "Description for Value 1H",
+            "value": "Value 1H",
+            "attributeTypeId": 3
+        }
+    ]
+	
+}
+
+
+
+
+Serializar directamente desde la entidad:
+
+{
+  "configs" : [ {
+    "versionLock" : 2,
+    "deleted" : false,
+    "createdAt" : "2024-11-05T17:48:31.851Z",
+    "modifiedAt" : "2024-11-05T17:48:31.882Z",
+    "id" : 1,
+    "description" : "Main Config",
+    "isCustom" : true,
+    "defaultValue" : "Default",
+    "applicationNode" : "Node1",
+    "parent" : 0,
+    "attributes" : [ {
+      "versionLock" : 1,
+      "deleted" : false,
+      "createdAt" : "2024-11-05T17:48:31.916Z",
+      "modifiedAt" : "2024-11-05T17:48:31.916Z",
+      "id" : 1,
+      "name" : "Attribute 1",
+      "attributeType" : {
+        "versionLock" : 2,
+        "deleted" : false,
+        "createdAt" : "2024-11-05T17:48:31.906Z",
+        "modifiedAt" : "2024-11-05T17:48:31.909Z",
+        "id" : 1,
+        "enumDescription" : "Example",
+        "isEnum" : false,
+        "isList" : false,
+        "type" : "prueba",
+        "attributeTypeValues" : [ {
+          "versionLock" : 1,
+          "deleted" : false,
+          "createdAt" : "2024-11-05T17:48:31.979Z",
+          "modifiedAt" : "2024-11-05T17:48:31.979Z",
+          "id" : 1,
+          "description" : "Description for Value 1A",
+          "value" : "Value 1A"
+        }, {
+          "versionLock" : 1,
+          "deleted" : false,
+          "createdAt" : "2024-11-05T17:48:31.988Z",
+          "modifiedAt" : "2024-11-05T17:48:31.988Z",
+          "id" : 2,
+          "description" : "Description for Value 1B",
+          "value" : "Value 1B"
+        } ]
+      }
+    }, {
+      "versionLock" : 1,
+      "deleted" : false,
+      "createdAt" : "2024-11-05T17:48:31.935Z",
+      "modifiedAt" : "2024-11-05T17:48:31.935Z",
+      "id" : 2,
+      "name" : "Attribute 2",
+      "attributeType" : {
+        "versionLock" : 2,
+        "deleted" : false,
+        "createdAt" : "2024-11-05T17:48:31.929Z",
+        "modifiedAt" : "2024-11-05T17:48:31.931Z",
+        "id" : 2,
+        "enumDescription" : "Example",
+        "isEnum" : false,
+        "isList" : false,
+        "type" : "prueba",
+        "attributeTypeValues" : [ {
+          "versionLock" : 1,
+          "deleted" : false,
+          "createdAt" : "2024-11-05T17:48:31.997Z",
+          "modifiedAt" : "2024-11-05T17:48:31.997Z",
+          "id" : 3,
+          "description" : "Description for Value 1C",
+          "value" : "Value 1C"
+        }, {
+          "versionLock" : 1,
+          "deleted" : false,
+          "createdAt" : "2024-11-05T17:48:32.006Z",
+          "modifiedAt" : "2024-11-05T17:48:32.006Z",
+          "id" : 4,
+          "description" : "Description for Value 1D",
+          "value" : "Value 1D"
+        } ]
+      }
+    }, {
+      "versionLock" : 1,
+      "deleted" : false,
+      "createdAt" : "2024-11-05T17:48:31.952Z",
+      "modifiedAt" : "2024-11-05T17:48:31.952Z",
+      "id" : 3,
+      "name" : "Attribute 3",
+      "attributeType" : {
+        "versionLock" : 2,
+        "deleted" : false,
+        "createdAt" : "2024-11-05T17:48:31.946Z",
+        "modifiedAt" : "2024-11-05T17:48:31.948Z",
+        "id" : 3,
+        "enumDescription" : "Example",
+        "isEnum" : false,
+        "isList" : false,
+        "type" : "prueba",
+        "attributeTypeValues" : [ {
+          "versionLock" : 1,
+          "deleted" : false,
+          "createdAt" : "2024-11-05T17:48:32.014Z",
+          "modifiedAt" : "2024-11-05T17:48:32.014Z",
+          "id" : 5,
+          "description" : "Description for Value 1F",
+          "value" : "Value 1F"
+        }, {
+          "versionLock" : 1,
+          "deleted" : false,
+          "createdAt" : "2024-11-05T17:48:32.022Z",
+          "modifiedAt" : "2024-11-05T17:48:32.022Z",
+          "id" : 6,
+          "description" : "Description for Value 1G",
+          "value" : "Value 1G"
+        }, {
+          "versionLock" : 1,
+          "deleted" : false,
+          "createdAt" : "2024-11-05T17:48:32.029Z",
+          "modifiedAt" : "2024-11-05T17:48:32.029Z",
+          "id" : 7,
+          "description" : "Description for Value 1H",
+          "value" : "Value 1H"
+        } ]
+      }
+    } ]
+  } ]
+}
+
+Como se puede apreciar muestra todos los nodos debidamente anidados dentro del nodo config
+
+
+
+Serializar pasando por dto y usando los assemblers:
+
+
+{
+  "attributes" : [ {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 1,
+    "name" : "Attribute 1",
+    "attributeTypeId" : 1,
+    "configId" : 1
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 2,
+    "name" : "Attribute 2",
+    "attributeTypeId" : 2,
+    "configId" : 1
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 3,
+    "name" : "Attribute 3",
+    "attributeTypeId" : 3,
+    "configId" : 1
+  } ],
+  "configs" : [ {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 1,
+    "description" : "Main Config",
+    "attributeIds" : [ 1, 2, 3 ],
+    "is_custom" : true,
+    "default_value" : "Default",
+    "application_node" : "Node1",
+    "parent" : 0
+  } ],
+  "attributeTypes" : [ {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 1,
+    "enumDescription" : "Example",
+    "isEnum" : false,
+    "isList" : false,
+    "type" : "prueba",
+    "attributeIds" : [ 1 ],
+    "attributeTypeValueIds" : [ 1, 2 ]
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 2,
+    "enumDescription" : "Example",
+    "isEnum" : false,
+    "isList" : false,
+    "type" : "prueba",
+    "attributeIds" : [ 2 ],
+    "attributeTypeValueIds" : [ 3, 4 ]
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 3,
+    "enumDescription" : "Example",
+    "isEnum" : false,
+    "isList" : false,
+    "type" : "prueba",
+    "attributeIds" : [ 3 ],
+    "attributeTypeValueIds" : [ 5, 6, 7 ]
+  } ],
+  "attributeTypeValues" : [ {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 1,
+    "description" : "Description for Value 1A",
+    "value" : "Value 1A",
+    "attributeTypeId" : 1
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 2,
+    "description" : "Description for Value 1B",
+    "value" : "Value 1B",
+    "attributeTypeId" : 1
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 3,
+    "description" : "Description for Value 1C",
+    "value" : "Value 1C",
+    "attributeTypeId" : 2
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 4,
+    "description" : "Description for Value 1D",
+    "value" : "Value 1D",
+    "attributeTypeId" : 2
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 5,
+    "description" : "Description for Value 1F",
+    "value" : "Value 1F",
+    "attributeTypeId" : 3
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 6,
+    "description" : "Description for Value 1G",
+    "value" : "Value 1G",
+    "attributeTypeId" : 3
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 7,
+    "description" : "Description for Value 1H",
+    "value" : "Value 1H",
+    "attributeTypeId" : 3
+  } ]
+}
+
+Muestra las entidades separadas con sus respectivos ids de referencia
+
+
+
+--------------------------------------------------------------------------------------------
+
+// Retrieve all Config objects from the repository
+        List<Config> configs = configRepository.findAll();
+        List<Attribute> attributes = attributeRepository.findAll();
+        List<AttributeType> attributeTypes = attributeTypeRepository.findAll();
+        List<AttributeTypeValue> attributeTypeValues = attributeTypeValueRepository.findAll();
+
+        // Crear un ArrayNode para cada tipo de datos
+        ArrayNode configArray = rootNode.putArray("configs");
+        ArrayNode attributeArray = rootNode.putArray("attributes");
+        ArrayNode attributeTypeArray = rootNode.putArray("attributeTypes");
+        ArrayNode attributeTypeValueArray = rootNode.putArray("attributeTypeValues");
+
+        for (Config config : configs) {
+            configArray.add(mapper.valueToTree(config));
+        }
+
+        for (Attribute attribute : attributes) {
+            attributeArray.add(mapper.valueToTree(attribute));
+        }
+
+        for (AttributeType attributeType : attributeTypes) {
+            attributeTypeArray.add(mapper.valueToTree(attributeType));
+        }
+
+        for (AttributeTypeValue attributeTypeValue : attributeTypeValues) {
+            attributeTypeValueArray.add(mapper.valueToTree(attributeTypeValue));
+        }
+
+
+
+

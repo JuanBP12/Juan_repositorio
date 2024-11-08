@@ -1,0 +1,128 @@
+{
+  "configs" : [ {
+    "versionLock" : 2,
+    "deleted" : false,
+    "createdAt" : "2024-11-06T08:56:16.180Z",
+    "modifiedAt" : "2024-11-06T08:56:16.243Z",
+    "id" : 1,
+    "description" : "Main Config",
+    "isCustom" : true,
+    "defaultValue" : "Default",
+    "applicationNode" : "Node1",
+    "parent" : 0,
+    "attributes" : [ {
+      "versionLock" : 1,
+      "deleted" : false,
+      "createdAt" : "2024-11-06T08:56:16.327Z",
+      "modifiedAt" : "2024-11-06T08:56:16.327Z",
+      "id" : 1,
+      "name" : "Attribute 1",
+      "attributeType" : {
+        "versionLock" : 2,
+        "deleted" : false,
+        "createdAt" : "2024-11-06T08:56:16.297Z",
+        "modifiedAt" : "2024-11-06T08:56:16.304Z",
+        "id" : 1,
+        "enumDescription" : "Example",
+        "isEnum" : false,
+        "isList" : false,
+        "type" : "prueba",
+        "attributeTypeValues" : [ {
+          "versionLock" : 1,
+          "deleted" : false,
+          "createdAt" : "2024-11-06T08:56:16.494Z",
+          "modifiedAt" : "2024-11-06T08:56:16.494Z",
+          "id" : 1,
+          "description" : "Description for Value 1A",
+          "value" : "Value 1A"
+        }, {
+          "versionLock" : 1,
+          "deleted" : false,
+          "createdAt" : "2024-11-06T08:56:16.513Z",
+          "modifiedAt" : "2024-11-06T08:56:16.513Z",
+          "id" : 2,
+          "description" : "Description for Value 1B",
+          "value" : "Value 1B"
+        } ]
+      }
+    }, {
+      "versionLock" : 1,
+      "deleted" : false,
+      "createdAt" : "2024-11-06T08:56:16.387Z",
+      "modifiedAt" : "2024-11-06T08:56:16.387Z",
+      "id" : 2,
+      "name" : "Attribute 2",
+      "attributeType" : {
+        "versionLock" : 2,
+        "deleted" : false,
+        "createdAt" : "2024-11-06T08:56:16.362Z",
+        "modifiedAt" : "2024-11-06T08:56:16.369Z",
+        "id" : 2,
+        "enumDescription" : "Example",
+        "isEnum" : false,
+        "isList" : false,
+        "type" : "prueba",
+        "attributeTypeValues" : [ {
+          "versionLock" : 1,
+          "deleted" : false,
+          "createdAt" : "2024-11-06T08:56:16.529Z",
+          "modifiedAt" : "2024-11-06T08:56:16.529Z",
+          "id" : 3,
+          "description" : "Description for Value 1C",
+          "value" : "Value 1C"
+        }, {
+          "versionLock" : 1,
+          "deleted" : false,
+          "createdAt" : "2024-11-06T08:56:16.550Z",
+          "modifiedAt" : "2024-11-06T08:56:16.550Z",
+          "id" : 4,
+          "description" : "Description for Value 1D",
+          "value" : "Value 1D"
+        } ]
+      }
+    }, {
+      "versionLock" : 1,
+      "deleted" : false,
+      "createdAt" : "2024-11-06T08:56:16.437Z",
+      "modifiedAt" : "2024-11-06T08:56:16.437Z",
+      "id" : 3,
+      "name" : "Attribute 3",
+      "attributeType" : {
+        "versionLock" : 2,
+        "deleted" : false,
+        "createdAt" : "2024-11-06T08:56:16.417Z",
+        "modifiedAt" : "2024-11-06T08:56:16.423Z",
+        "id" : 3,
+        "enumDescription" : "Example",
+        "isEnum" : false,
+        "isList" : false,
+        "type" : "prueba",
+        "attributeTypeValues" : [ {
+          "versionLock" : 1,
+          "deleted" : false,
+          "createdAt" : "2024-11-06T08:56:16.572Z",
+          "modifiedAt" : "2024-11-06T08:56:16.572Z",
+          "id" : 5,
+          "description" : "Description for Value 1F",
+          "value" : "Value 1F"
+        }, {
+          "versionLock" : 1,
+          "deleted" : false,
+          "createdAt" : "2024-11-06T08:56:16.594Z",
+          "modifiedAt" : "2024-11-06T08:56:16.594Z",
+          "id" : 6,
+          "description" : "Description for Value 1G",
+          "value" : "Value 1G"
+        }, {
+          "versionLock" : 1,
+          "deleted" : false,
+          "createdAt" : "2024-11-06T08:56:16.615Z",
+          "modifiedAt" : "2024-11-06T08:56:16.615Z",
+          "id" : 7,
+          "description" : "Description for Value 1H",
+          "value" : "Value 1H"
+        } ]
+      }
+    } ]
+  } ]
+}

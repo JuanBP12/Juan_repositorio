@@ -1,0 +1,144 @@
+{
+  "attributes" : [ {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 1,
+    "name" : "Attribute 1",
+    "attributeTypeId" : 1,
+    "configId" : 1
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 2,
+    "name" : "Attribute 2",
+    "attributeTypeId" : 2,
+    "configId" : 1
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 3,
+    "name" : "Attribute 3",
+    "attributeTypeId" : 3,
+    "configId" : 1
+  } ],
+  "configs" : [ {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 1,
+    "description" : "Main Config",
+    "attributeIds" : [ 1, 2, 3 ],
+    "is_custom" : true,
+    "default_value" : "Default",
+    "application_node" : "Node1",
+    "parent" : 0
+  } ],
+  "attributeTypes" : [ {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 1,
+    "enumDescription" : "Example",
+    "isEnum" : false,
+    "isList" : false,
+    "type" : "prueba",
+    "attributeIds" : [ 1 ],
+    "attributeTypeValueIds" : [ 1, 2 ]
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 2,
+    "enumDescription" : "Example",
+    "isEnum" : false,
+    "isList" : false,
+    "type" : "prueba",
+    "attributeIds" : [ 2 ],
+    "attributeTypeValueIds" : [ 3, 4 ]
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 3,
+    "enumDescription" : "Example",
+    "isEnum" : false,
+    "isList" : false,
+    "type" : "prueba",
+    "attributeIds" : [ 3 ],
+    "attributeTypeValueIds" : [ 5, 6, 7 ]
+  } ],
+  "attributeTypeValues" : [ {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 1,
+    "description" : "Description for Value 1A",
+    "value" : "Value 1A",
+    "attributeTypeId" : 1
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 2,
+    "description" : "Description for Value 1B",
+    "value" : "Value 1B",
+    "attributeTypeId" : 1
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 3,
+    "description" : "Description for Value 1C",
+    "value" : "Value 1C",
+    "attributeTypeId" : 2
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 4,
+    "description" : "Description for Value 1D",
+    "value" : "Value 1D",
+    "attributeTypeId" : 2
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 5,
+    "description" : "Description for Value 1F",
+    "value" : "Value 1F",
+    "attributeTypeId" : 3
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 6,
+    "description" : "Description for Value 1G",
+    "value" : "Value 1G",
+    "attributeTypeId" : 3
+  }, {
+    "versionLock" : 1,
+    "deleted" : false,
+    "createdAt" : null,
+    "modifiedAt" : null,
+    "id" : 7,
+    "description" : "Description for Value 1H",
+    "value" : "Value 1H",
+    "attributeTypeId" : 3
+  } ]
+}

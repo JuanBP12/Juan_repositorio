@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6885de12-9007-48f2-9614-97a76ba2a7be" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2mmliCUhNsQdQ0Bv4Bu2qsKWS95" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.CsvServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CsvServiceTest.procesarEquipos_conArchivoValido_debeRetornarOK.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CsvServiceTest.procesarJugadores_conArchivoVacio_debeRetornarBadRequest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CsvServiceTest.procesarJugadores_conArchivoValido_debeRetornarOK.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CsvServiceTest.procesarJugadores_conErrorDeLectura_debeRetornarInternalServerError.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CsvServiceTest.procesarJugadores_conErrorLecturaArchivo_debeRetornarErrorInterno.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CsvServiceTest.procesarParticipaciones_conArchivoValido_debeRetornarOK.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EquipoServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EquipoServiceTest.findAll_debeRetornarListaDeDTOs.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EquipoServiceTest.findByIdEquipo_debeRetornarEquipoSiExiste.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EquipoServiceTest.findById_debeRetornarDTO.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EquipoServiceTest.updateEquipo_debeActualizarCorrectamente.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JugadorServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JugadorServiceTest.findAll.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JugadorServiceTest.findById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JugadorServiceTest.updateJugador.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParticipacionServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParticipacionServiceTest.findAll.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParticipacionServiceTest.findById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParticipacionServiceTest.updateParticipacion.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.SoccerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Desktop/Soccer&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.soccer.service" />
+      <recent name="com.example.soccer.controller" />
+      <recent name="com.example.soccer" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SoccerApplication">
+    <configuration name="JugadorServiceTest.updateJugador" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Soccer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.soccer.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.soccer.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.soccer.service.JugadorServiceTest" />
+      <option name="METHOD_NAME" value="updateJugador" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParticipacionServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Soccer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.soccer.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.soccer.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.soccer.service.ParticipacionServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParticipacionServiceTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Soccer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.soccer.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.soccer.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.soccer.service.ParticipacionServiceTest" />
+      <option name="METHOD_NAME" value="findAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParticipacionServiceTest.findById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Soccer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.soccer.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.soccer.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.soccer.service.ParticipacionServiceTest" />
+      <option name="METHOD_NAME" value="findById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParticipacionServiceTest.updateParticipacion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Soccer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.soccer.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.soccer.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.soccer.service.ParticipacionServiceTest" />
+      <option name="METHOD_NAME" value="updateParticipacion" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SoccerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="Soccer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.soccer.SoccerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ParticipacionServiceTest.findById" />
+        <item itemvalue="JUnit.ParticipacionServiceTest.findAll" />
+        <item itemvalue="JUnit.ParticipacionServiceTest.updateParticipacion" />
+        <item itemvalue="JUnit.ParticipacionServiceTest" />
+        <item itemvalue="JUnit.JugadorServiceTest.updateJugador" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6885de12-9007-48f2-9614-97a76ba2a7be" name="Changes" comment="" />
+      <created>1727689756333</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727689756333</updated>
+      <workItem from="1727689757490" duration="3134000" />
+      <workItem from="1727692909261" duration="4156000" />
+      <workItem from="1727697099629" duration="5889000" />
+      <workItem from="1727761983705" duration="867000" />
+      <workItem from="1727762877857" duration="68000" />
+      <workItem from="1727784227152" duration="26000" />
+      <workItem from="1728023336859" duration="37000" />
+      <workItem from="1728629415248" duration="2726000" />
+      <workItem from="1728633922097" duration="463000" />
+      <workItem from="1728634670691" duration="10270000" />
+      <workItem from="1728646632692" duration="2822000" />
+      <workItem from="1728920065352" duration="241000" />
+      <workItem from="1728920665285" duration="23000" />
+      <workItem from="1729195845470" duration="1804000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

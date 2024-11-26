@@ -44,12 +44,13 @@ public class BatchConfig {
         this.dataSource = dataSource;
     }
 
+    // Configuracion de JdbcTemplate
     @Bean(name = "jdbcTemplate")
     public JdbcTemplate jdbcTemplate() {
         return new JdbcTemplate(dataSource);
     }
 
-    // Configuración de PlatformTransactionManager
+    // Configuración de JpaTransactionManager si no estuvieramos usando JPA usariamos PlatformTransactionManager
     @Bean(name = "transactionManager")
     public JpaTransactionManager transactionManager() {
         return new JpaTransactionManager();
@@ -76,7 +77,6 @@ public class BatchConfig {
         // Configura un TaskExecutor (sincrónico o asincrónico)
         TaskExecutor taskExecutor = new SyncTaskExecutor();  // O usa SimpleAsyncTaskExecutor para asincrónico
         jobLauncher.setTaskExecutor(taskExecutor);  // Establecer el TaskExecutor
-
         return jobLauncher;
     }
 }

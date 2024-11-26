@@ -47,9 +47,10 @@ public class BatchController {
             // Pasar la ruta directamente al lector antes de ejecutar el trabajo
             csvFileReader.setFilePath(ruta);
 
-            jobLauncher.run(fileProcessingJob, new JobParametersBuilder()
-                    .addString("ruta", ruta) // Para usarlo en el trabajo
-                    .toJobParameters());
+            // jobLauncher es un componente de Spring Batch que se encarga de iniciar y ejecutar un trabajo (job). El metodo run es responsable de ejecutar el trabajo especificado con un conjunto de parámetros.
+            jobLauncher.run(fileProcessingJob, new JobParametersBuilder()//JobParametersBuilder es una clase que ayuda a construir los parámetros que se pasarán al trabajo. Estos son valores que pueden ser utilizados dentro del job y sus pasos.
+                    .addString("ruta", ruta)// Aqui añadimos el parametro de la ruta que obtenemos como parámetro en la solicitud HTTP del RequestParam
+                    .toJobParameters());// Este paso es opcional pero mejora la trazabilidad, la flexibilidad y el mantenimiento del código, ademas de reducir el acoplamiento.
 
             return ResponseEntity.ok("Job started successfully!");
         } catch (JobExecutionException e) {

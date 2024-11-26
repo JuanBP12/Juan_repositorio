@@ -13,8 +13,10 @@ import org.springframework.batch.core.job.builder.JobBuilder;
 import org.springframework.batch.core.repository.JobRepository;
 import org.springframework.batch.core.step.builder.StepBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.task.TaskExecutor;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
 
@@ -31,7 +33,7 @@ public class FileProcessingJob {
     private final JobCompletionListener jobCompletionListener;  // Inyectamos el listener
 
     public FileProcessingJob(JobCompletionListener jobCompletionListener) {
-        this.jobCompletionListener = jobCompletionListener;  // Asignamos el listener
+        this.jobCompletionListener = jobCompletionListener;
     }
 
     @Bean(name = "job")

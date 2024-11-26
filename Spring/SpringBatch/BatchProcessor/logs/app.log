@@ -8624,3 +8624,785 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'data.persona' doesn't exist
 2024-11-25 15:30:13 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-11-25 15:30:13 INFO  HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
 2024-11-25 15:30:13 INFO  HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+2024-11-26 13:26:45 INFO  BatchProcessorApplication:50 - Starting BatchProcessorApplication using Java 23.0.1 with PID 7204 (C:\Users\jbernaldez\Desktop\Juan_repositorio\Spring\SpringBatch\BatchProcessor\BatchProcessor\target\classes started by jbernaldez in C:\Users\jbernaldez\Desktop\Juan_repositorio\Spring\SpringBatch\BatchProcessor)
+2024-11-26 13:26:45 INFO  BatchProcessorApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-11-26 13:26:46 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-26 13:26:46 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-26 13:26:47 INFO  BatchRegistrar:84 - Bean jobRepository already defined in the application context, skipping the registration of a jobRepository
+2024-11-26 13:26:47 INFO  BatchRegistrar:200 - Bean jobLauncher already defined in the application context, skipping the registration of a jobLauncher
+2024-11-26 13:26:47 INFO  BatchRegistrar:70 - Finished Spring Batch infrastructure beans configuration in 9 ms.
+2024-11-26 13:26:47 INFO  BatchRegistrar:84 - Bean jobRepository already defined in the application context, skipping the registration of a jobRepository
+2024-11-26 13:26:47 INFO  BatchRegistrar:151 - Bean jobExplorer already defined in the application context, skipping the registration of a jobExplorer
+2024-11-26 13:26:47 INFO  BatchRegistrar:200 - Bean jobLauncher already defined in the application context, skipping the registration of a jobLauncher
+2024-11-26 13:26:47 INFO  BatchRegistrar:219 - Bean jobRegistry already defined in the application context, skipping the registration of a jobRegistry
+2024-11-26 13:26:47 INFO  BatchRegistrar:231 - Bean jobRegistrySmartInitializingSingleton already defined in the application context, skipping the registration of a jobRegistrySmartInitializingSingleton
+2024-11-26 13:26:47 INFO  BatchRegistrar:245 - Bean jobOperator already defined in the application context, skipping the registration of a jobOperator
+2024-11-26 13:26:47 INFO  BatchRegistrar:70 - Finished Spring Batch infrastructure beans configuration in 2 ms.
+2024-11-26 13:26:47 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26 13:26:47 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 72 ms. Found 2 JPA repository interfaces.
+2024-11-26 13:26:49 INFO  TomcatWebServer:111 - Tomcat initialized with port 8080 (http)
+2024-11-26 13:26:49 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-26 13:26:49 INFO  StandardService:173 - Starting service [Tomcat]
+2024-11-26 13:26:49 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-26 13:26:49 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2024-11-26 13:26:49 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 3193 ms
+2024-11-26 13:26:49 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-26 13:26:49 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-26 13:26:49 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-11-26 13:26:50 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26 13:26:50 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2024-11-26 13:26:51 INFO  HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34b61a3d
+2024-11-26 13:26:51 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2024-11-26 13:26:51 WARN  deprecation:153 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-26 13:26:52 INFO  EntityInstantiatorPojoStandard:53 - HHH000182: No default (no-argument) constructor for class: com.example.BatchProcessor.model.Empleo (class must be instantiated by Interceptor)
+2024-11-26 13:26:52 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-26 13:26:52 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Error executing DDL "alter table persona drop foreign key FKa39oc41d0cpucrjuud3cjrddg" via JDBC [Table 'data.persona' doesn't exist]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table persona drop foreign key FKa39oc41d0cpucrjuud3cjrddg" via JDBC [Table 'data.persona' doesn't exist]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:476) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropConstraintsTablesSequences(SchemaDropperImpl.java:242) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:215) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:185) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:155) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:115) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:238) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430) ~[?:?]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) [spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) [spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) [spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) [spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) [spring-boot-3.3.4.jar:3.3.4]
+	at com.example.BatchProcessor.BatchProcessorApplication.main(BatchProcessorApplication.java:19) [classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.3.4.jar:3.3.4]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'data.persona' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.1.0.jar:?]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	... 42 more
+2024-11-26 13:26:52 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 13:26:53 INFO  BatchObservabilityBeanPostProcessor:62 - No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2024-11-26 13:26:53 INFO  BatchObservabilityBeanPostProcessor:62 - No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2024-11-26 13:26:54 WARN  JpaBaseConfiguration$JpaWebConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26 13:26:54 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2024-11-26 13:26:54 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-26 13:26:54 INFO  TomcatWebServer:243 - Tomcat started on port 8080 (http) with context path '/'
+2024-11-26 13:26:54 INFO  BatchProcessorApplication:56 - Started BatchProcessorApplication in 9.564 seconds (process running for 12.838)
+2024-11-26 13:27:01 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-26 13:27:01 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2024-11-26 13:27:01 INFO  DispatcherServlet:554 - Completed initialization in 1 ms
+2024-11-26 13:27:01 INFO  TaskExecutorJobLauncher:152 - Job: [SimpleJob: [name=fileProcessingJob]] launched with the following parameters: [{'ruta':'{value=C:\Users\jbernaldez\Desktop\Juan_repositorio\BatchProcessor\BatchProcessor\src\main\resources\input.csv, type=class java.lang.String, identifying=true}'}]
+2024-11-26 13:27:01 INFO  SimpleStepHandler:150 - Executing step: [fileProcessingStep]
+2024-11-26 13:27:01 INFO  AbstractStep:269 - Step: [fileProcessingStep] executed in 200ms
+2024-11-26 13:27:01 INFO  TaskExecutorJobLauncher:159 - Job: [SimpleJob: [name=fileProcessingJob]] completed with the following parameters: [{'ruta':'{value=C:\Users\jbernaldez\Desktop\Juan_repositorio\BatchProcessor\BatchProcessor\src\main\resources\input.csv, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 276ms
+2024-11-26 14:09:01 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 14:09:01 INFO  HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+2024-11-26 14:09:01 INFO  HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+2024-11-26 14:25:06 INFO  BatchProcessorApplication:50 - Starting BatchProcessorApplication using Java 23.0.1 with PID 2324 (C:\Users\jbernaldez\Desktop\Juan_repositorio\Spring\SpringBatch\BatchProcessor\BatchProcessor\target\classes started by jbernaldez in C:\Users\jbernaldez\Desktop\Juan_repositorio\Spring\SpringBatch\BatchProcessor)
+2024-11-26 14:25:06 INFO  BatchProcessorApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-11-26 14:25:06 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-26 14:25:06 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-26 14:25:07 INFO  BatchRegistrar:84 - Bean jobRepository already defined in the application context, skipping the registration of a jobRepository
+2024-11-26 14:25:07 INFO  BatchRegistrar:200 - Bean jobLauncher already defined in the application context, skipping the registration of a jobLauncher
+2024-11-26 14:25:07 INFO  BatchRegistrar:70 - Finished Spring Batch infrastructure beans configuration in 10 ms.
+2024-11-26 14:25:07 INFO  BatchRegistrar:84 - Bean jobRepository already defined in the application context, skipping the registration of a jobRepository
+2024-11-26 14:25:07 INFO  BatchRegistrar:151 - Bean jobExplorer already defined in the application context, skipping the registration of a jobExplorer
+2024-11-26 14:25:07 INFO  BatchRegistrar:200 - Bean jobLauncher already defined in the application context, skipping the registration of a jobLauncher
+2024-11-26 14:25:07 INFO  BatchRegistrar:219 - Bean jobRegistry already defined in the application context, skipping the registration of a jobRegistry
+2024-11-26 14:25:07 INFO  BatchRegistrar:231 - Bean jobRegistrySmartInitializingSingleton already defined in the application context, skipping the registration of a jobRegistrySmartInitializingSingleton
+2024-11-26 14:25:07 INFO  BatchRegistrar:245 - Bean jobOperator already defined in the application context, skipping the registration of a jobOperator
+2024-11-26 14:25:07 INFO  BatchRegistrar:70 - Finished Spring Batch infrastructure beans configuration in 2 ms.
+2024-11-26 14:25:07 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26 14:25:08 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 68 ms. Found 2 JPA repository interfaces.
+2024-11-26 14:25:09 INFO  TomcatWebServer:111 - Tomcat initialized with port 8080 (http)
+2024-11-26 14:25:09 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-26 14:25:09 INFO  StandardService:173 - Starting service [Tomcat]
+2024-11-26 14:25:09 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-26 14:25:09 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2024-11-26 14:25:09 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 2624 ms
+2024-11-26 14:25:09 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-26 14:25:09 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-26 14:25:10 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-11-26 14:25:10 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26 14:25:10 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2024-11-26 14:25:11 INFO  HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@97976d4
+2024-11-26 14:25:11 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2024-11-26 14:25:11 WARN  deprecation:153 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-26 14:25:12 INFO  EntityInstantiatorPojoStandard:53 - HHH000182: No default (no-argument) constructor for class: com.example.BatchProcessor.model.Empleo (class must be instantiated by Interceptor)
+2024-11-26 14:25:12 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-26 14:25:12 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 14:25:13 INFO  BatchObservabilityBeanPostProcessor:62 - No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2024-11-26 14:25:13 INFO  BatchObservabilityBeanPostProcessor:62 - No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2024-11-26 14:25:13 WARN  JpaBaseConfiguration$JpaWebConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26 14:25:14 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2024-11-26 14:25:14 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-26 14:25:14 INFO  TomcatWebServer:243 - Tomcat started on port 8080 (http) with context path '/'
+2024-11-26 14:25:14 INFO  BatchProcessorApplication:56 - Started BatchProcessorApplication in 8.046 seconds (process running for 9.739)
+2024-11-26 14:25:15 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 14:25:15 INFO  HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+2024-11-26 14:25:15 INFO  HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+2024-11-26 14:25:19 INFO  BatchProcessorApplication:50 - Starting BatchProcessorApplication using Java 23.0.1 with PID 7772 (C:\Users\jbernaldez\Desktop\Juan_repositorio\Spring\SpringBatch\BatchProcessor\BatchProcessor\target\classes started by jbernaldez in C:\Users\jbernaldez\Desktop\Juan_repositorio\Spring\SpringBatch\BatchProcessor)
+2024-11-26 14:25:19 INFO  BatchProcessorApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-11-26 14:25:19 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-26 14:25:19 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-26 14:25:20 INFO  BatchRegistrar:84 - Bean jobRepository already defined in the application context, skipping the registration of a jobRepository
+2024-11-26 14:25:20 INFO  BatchRegistrar:200 - Bean jobLauncher already defined in the application context, skipping the registration of a jobLauncher
+2024-11-26 14:25:20 INFO  BatchRegistrar:70 - Finished Spring Batch infrastructure beans configuration in 13 ms.
+2024-11-26 14:25:20 INFO  BatchRegistrar:84 - Bean jobRepository already defined in the application context, skipping the registration of a jobRepository
+2024-11-26 14:25:20 INFO  BatchRegistrar:151 - Bean jobExplorer already defined in the application context, skipping the registration of a jobExplorer
+2024-11-26 14:25:20 INFO  BatchRegistrar:200 - Bean jobLauncher already defined in the application context, skipping the registration of a jobLauncher
+2024-11-26 14:25:20 INFO  BatchRegistrar:219 - Bean jobRegistry already defined in the application context, skipping the registration of a jobRegistry
+2024-11-26 14:25:20 INFO  BatchRegistrar:231 - Bean jobRegistrySmartInitializingSingleton already defined in the application context, skipping the registration of a jobRegistrySmartInitializingSingleton
+2024-11-26 14:25:20 INFO  BatchRegistrar:245 - Bean jobOperator already defined in the application context, skipping the registration of a jobOperator
+2024-11-26 14:25:20 INFO  BatchRegistrar:70 - Finished Spring Batch infrastructure beans configuration in 3 ms.
+2024-11-26 14:25:20 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26 14:25:20 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 70 ms. Found 2 JPA repository interfaces.
+2024-11-26 14:25:22 INFO  TomcatWebServer:111 - Tomcat initialized with port 8080 (http)
+2024-11-26 14:25:22 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-26 14:25:22 INFO  StandardService:173 - Starting service [Tomcat]
+2024-11-26 14:25:22 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-26 14:25:22 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2024-11-26 14:25:22 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 2774 ms
+2024-11-26 14:25:22 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-26 14:25:22 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-26 14:25:22 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-11-26 14:25:23 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26 14:25:23 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2024-11-26 14:25:23 INFO  HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9be71a3
+2024-11-26 14:25:23 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2024-11-26 14:25:23 WARN  deprecation:153 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-26 14:25:24 INFO  EntityInstantiatorPojoStandard:53 - HHH000182: No default (no-argument) constructor for class: com.example.BatchProcessor.model.Empleo (class must be instantiated by Interceptor)
+2024-11-26 14:25:25 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-26 14:25:25 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Error executing DDL "alter table persona drop foreign key FKa39oc41d0cpucrjuud3cjrddg" via JDBC [Table 'data.persona' doesn't exist]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table persona drop foreign key FKa39oc41d0cpucrjuud3cjrddg" via JDBC [Table 'data.persona' doesn't exist]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:476) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropConstraintsTablesSequences(SchemaDropperImpl.java:242) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:215) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:185) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:155) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:115) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:238) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430) ~[?:?]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) [spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) [spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) [spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) [spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) [spring-boot-3.3.4.jar:3.3.4]
+	at com.example.BatchProcessor.BatchProcessorApplication.main(BatchProcessorApplication.java:19) [classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.3.4.jar:3.3.4]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'data.persona' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.1.0.jar:?]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	... 42 more
+2024-11-26 14:25:25 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 14:25:25 INFO  BatchObservabilityBeanPostProcessor:62 - No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2024-11-26 14:25:25 INFO  BatchObservabilityBeanPostProcessor:62 - No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2024-11-26 14:25:26 WARN  JpaBaseConfiguration$JpaWebConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26 14:25:27 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2024-11-26 14:25:27 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-26 14:25:27 INFO  TomcatWebServer:243 - Tomcat started on port 8080 (http) with context path '/'
+2024-11-26 14:25:27 INFO  BatchProcessorApplication:56 - Started BatchProcessorApplication in 8.289 seconds (process running for 10.042)
+2024-11-26 14:25:29 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-26 14:25:29 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2024-11-26 14:25:29 INFO  DispatcherServlet:554 - Completed initialization in 1 ms
+2024-11-26 14:25:29 INFO  TaskExecutorJobLauncher:152 - Job: [SimpleJob: [name=fileProcessingJob]] launched with the following parameters: [{'ruta':'{value=C:\Users\jbernaldez\Desktop\Juan_repositorio\Spring\SpringBatch\BatchProcessor\BatchProcessor\src\main\resources\input.csv, type=class java.lang.String, identifying=true}'}]
+2024-11-26 14:25:29 INFO  SimpleStepHandler:150 - Executing step: [fileProcessingStep]
+2024-11-26 14:25:29 INFO  AbstractStep:269 - Step: [fileProcessingStep] executed in 205ms
+2024-11-26 14:25:29 INFO  TaskExecutorJobLauncher:159 - Job: [SimpleJob: [name=fileProcessingJob]] completed with the following parameters: [{'ruta':'{value=C:\Users\jbernaldez\Desktop\Juan_repositorio\Spring\SpringBatch\BatchProcessor\BatchProcessor\src\main\resources\input.csv, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 281ms
+2024-11-26 14:30:42 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 14:30:42 INFO  HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+2024-11-26 14:30:42 INFO  HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+2024-11-26 14:30:48 INFO  BatchProcessorApplication:50 - Starting BatchProcessorApplication using Java 23.0.1 with PID 5080 (C:\Users\jbernaldez\Desktop\Juan_repositorio\Spring\SpringBatch\BatchProcessor\BatchProcessor\target\classes started by jbernaldez in C:\Users\jbernaldez\Desktop\Juan_repositorio\Spring\SpringBatch\BatchProcessor)
+2024-11-26 14:30:48 INFO  BatchProcessorApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-11-26 14:30:48 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-26 14:30:48 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-26 14:30:49 INFO  BatchRegistrar:84 - Bean jobRepository already defined in the application context, skipping the registration of a jobRepository
+2024-11-26 14:30:49 INFO  BatchRegistrar:200 - Bean jobLauncher already defined in the application context, skipping the registration of a jobLauncher
+2024-11-26 14:30:49 INFO  BatchRegistrar:70 - Finished Spring Batch infrastructure beans configuration in 11 ms.
+2024-11-26 14:30:49 INFO  BatchRegistrar:84 - Bean jobRepository already defined in the application context, skipping the registration of a jobRepository
+2024-11-26 14:30:49 INFO  BatchRegistrar:151 - Bean jobExplorer already defined in the application context, skipping the registration of a jobExplorer
+2024-11-26 14:30:49 INFO  BatchRegistrar:200 - Bean jobLauncher already defined in the application context, skipping the registration of a jobLauncher
+2024-11-26 14:30:49 INFO  BatchRegistrar:219 - Bean jobRegistry already defined in the application context, skipping the registration of a jobRegistry
+2024-11-26 14:30:49 INFO  BatchRegistrar:231 - Bean jobRegistrySmartInitializingSingleton already defined in the application context, skipping the registration of a jobRegistrySmartInitializingSingleton
+2024-11-26 14:30:49 INFO  BatchRegistrar:245 - Bean jobOperator already defined in the application context, skipping the registration of a jobOperator
+2024-11-26 14:30:49 INFO  BatchRegistrar:70 - Finished Spring Batch infrastructure beans configuration in 4 ms.
+2024-11-26 14:30:49 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26 14:30:49 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 77 ms. Found 2 JPA repository interfaces.
+2024-11-26 14:30:51 INFO  TomcatWebServer:111 - Tomcat initialized with port 8080 (http)
+2024-11-26 14:30:51 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-26 14:30:51 INFO  StandardService:173 - Starting service [Tomcat]
+2024-11-26 14:30:51 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-26 14:30:51 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2024-11-26 14:30:51 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 2899 ms
+2024-11-26 14:30:51 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-26 14:30:51 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-26 14:30:51 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-11-26 14:30:52 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26 14:30:52 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2024-11-26 14:30:53 INFO  HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@598ce953
+2024-11-26 14:30:53 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2024-11-26 14:30:53 WARN  deprecation:153 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-26 14:30:54 INFO  EntityInstantiatorPojoStandard:53 - HHH000182: No default (no-argument) constructor for class: com.example.BatchProcessor.model.Empleo (class must be instantiated by Interceptor)
+2024-11-26 14:30:54 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-26 14:30:54 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Error executing DDL "alter table persona drop foreign key FKa39oc41d0cpucrjuud3cjrddg" via JDBC [Table 'data.persona' doesn't exist]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table persona drop foreign key FKa39oc41d0cpucrjuud3cjrddg" via JDBC [Table 'data.persona' doesn't exist]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:476) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropConstraintsTablesSequences(SchemaDropperImpl.java:242) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:215) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:185) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:155) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:115) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:238) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430) ~[?:?]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) [spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) [spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) [spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) [spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) [spring-boot-3.3.4.jar:3.3.4]
+	at com.example.BatchProcessor.BatchProcessorApplication.main(BatchProcessorApplication.java:19) [classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.3.4.jar:3.3.4]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'data.persona' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.1.0.jar:?]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	... 42 more
+2024-11-26 14:30:54 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 14:30:55 INFO  BatchObservabilityBeanPostProcessor:62 - No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2024-11-26 14:30:55 INFO  BatchObservabilityBeanPostProcessor:62 - No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2024-11-26 14:30:56 WARN  JpaBaseConfiguration$JpaWebConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26 14:30:56 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2024-11-26 14:30:56 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-26 14:30:56 INFO  TomcatWebServer:243 - Tomcat started on port 8080 (http) with context path '/'
+2024-11-26 14:30:56 INFO  BatchProcessorApplication:56 - Started BatchProcessorApplication in 9.083 seconds (process running for 10.922)
+2024-11-26 14:30:58 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-26 14:30:58 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2024-11-26 14:30:58 INFO  DispatcherServlet:554 - Completed initialization in 2 ms
+2024-11-26 14:30:58 INFO  TaskExecutorJobLauncher:152 - Job: [SimpleJob: [name=fileProcessingJob]] launched with the following parameters: [{'ruta':'{value=C:\Users\jbernaldez\Desktop\Juan_repositorio\Spring\SpringBatch\BatchProcessor\BatchProcessor\src\main\resources\input.csv, type=class java.lang.String, identifying=true}'}]
+2024-11-26 14:30:59 INFO  SimpleStepHandler:150 - Executing step: [fileProcessingStep]
+2024-11-26 14:30:59 INFO  AbstractStep:269 - Step: [fileProcessingStep] executed in 266ms
+2024-11-26 14:30:59 INFO  TaskExecutorJobLauncher:159 - Job: [SimpleJob: [name=fileProcessingJob]] completed with the following parameters: [{'ruta':'{value=C:\Users\jbernaldez\Desktop\Juan_repositorio\Spring\SpringBatch\BatchProcessor\BatchProcessor\src\main\resources\input.csv, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 347ms
+2024-11-26 14:31:52 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 14:31:52 INFO  HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+2024-11-26 14:31:52 INFO  HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+2024-11-26 14:31:57 INFO  BatchProcessorApplication:50 - Starting BatchProcessorApplication using Java 23.0.1 with PID 4952 (C:\Users\jbernaldez\Desktop\Juan_repositorio\Spring\SpringBatch\BatchProcessor\BatchProcessor\target\classes started by jbernaldez in C:\Users\jbernaldez\Desktop\Juan_repositorio\Spring\SpringBatch\BatchProcessor)
+2024-11-26 14:31:57 INFO  BatchProcessorApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-11-26 14:31:57 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-26 14:31:57 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-26 14:31:58 INFO  BatchRegistrar:84 - Bean jobRepository already defined in the application context, skipping the registration of a jobRepository
+2024-11-26 14:31:58 INFO  BatchRegistrar:200 - Bean jobLauncher already defined in the application context, skipping the registration of a jobLauncher
+2024-11-26 14:31:58 INFO  BatchRegistrar:70 - Finished Spring Batch infrastructure beans configuration in 10 ms.
+2024-11-26 14:31:58 INFO  BatchRegistrar:84 - Bean jobRepository already defined in the application context, skipping the registration of a jobRepository
+2024-11-26 14:31:58 INFO  BatchRegistrar:151 - Bean jobExplorer already defined in the application context, skipping the registration of a jobExplorer
+2024-11-26 14:31:58 INFO  BatchRegistrar:200 - Bean jobLauncher already defined in the application context, skipping the registration of a jobLauncher
+2024-11-26 14:31:58 INFO  BatchRegistrar:219 - Bean jobRegistry already defined in the application context, skipping the registration of a jobRegistry
+2024-11-26 14:31:58 INFO  BatchRegistrar:231 - Bean jobRegistrySmartInitializingSingleton already defined in the application context, skipping the registration of a jobRegistrySmartInitializingSingleton
+2024-11-26 14:31:58 INFO  BatchRegistrar:245 - Bean jobOperator already defined in the application context, skipping the registration of a jobOperator
+2024-11-26 14:31:58 INFO  BatchRegistrar:70 - Finished Spring Batch infrastructure beans configuration in 3 ms.
+2024-11-26 14:31:58 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26 14:31:58 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 64 ms. Found 2 JPA repository interfaces.
+2024-11-26 14:32:00 INFO  TomcatWebServer:111 - Tomcat initialized with port 8080 (http)
+2024-11-26 14:32:00 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-26 14:32:00 INFO  StandardService:173 - Starting service [Tomcat]
+2024-11-26 14:32:00 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-26 14:32:00 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2024-11-26 14:32:00 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 2890 ms
+2024-11-26 14:32:00 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-26 14:32:00 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-26 14:32:00 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-11-26 14:32:01 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26 14:32:01 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2024-11-26 14:32:02 INFO  HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ea2742b
+2024-11-26 14:32:02 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2024-11-26 14:32:02 WARN  deprecation:153 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-26 14:32:03 INFO  EntityInstantiatorPojoStandard:53 - HHH000182: No default (no-argument) constructor for class: com.example.BatchProcessor.model.Empleo (class must be instantiated by Interceptor)
+2024-11-26 14:32:03 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-26 14:32:03 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Error executing DDL "alter table persona drop foreign key FKa39oc41d0cpucrjuud3cjrddg" via JDBC [Table 'data.persona' doesn't exist]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table persona drop foreign key FKa39oc41d0cpucrjuud3cjrddg" via JDBC [Table 'data.persona' doesn't exist]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:476) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropConstraintsTablesSequences(SchemaDropperImpl.java:242) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:215) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:185) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:155) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:115) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:238) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430) ~[?:?]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) [spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) [spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) [spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) [spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) [spring-boot-3.3.4.jar:3.3.4]
+	at com.example.BatchProcessor.BatchProcessorApplication.main(BatchProcessorApplication.java:19) [classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.3.4.jar:3.3.4]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'data.persona' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.1.0.jar:?]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	... 42 more
+2024-11-26 14:32:03 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 14:32:04 INFO  BatchObservabilityBeanPostProcessor:62 - No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2024-11-26 14:32:04 INFO  BatchObservabilityBeanPostProcessor:62 - No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2024-11-26 14:32:04 WARN  JpaBaseConfiguration$JpaWebConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26 14:32:05 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2024-11-26 14:32:05 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-26 14:32:05 INFO  TomcatWebServer:243 - Tomcat started on port 8080 (http) with context path '/'
+2024-11-26 14:32:05 INFO  BatchProcessorApplication:56 - Started BatchProcessorApplication in 8.694 seconds (process running for 10.478)
+2024-11-26 14:32:07 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-26 14:32:07 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2024-11-26 14:32:07 INFO  DispatcherServlet:554 - Completed initialization in 2 ms
+2024-11-26 14:32:07 INFO  TaskExecutorJobLauncher:152 - Job: [SimpleJob: [name=fileProcessingJob]] launched with the following parameters: [{'ruta':'{value=C:\Users\jbernaldez\Desktop\Juan_repositorio\Spring\SpringBatch\BatchProcessor\BatchProcessor\src\main\resources\input.csv, type=class java.lang.String, identifying=true}'}]
+2024-11-26 14:32:07 INFO  SimpleStepHandler:150 - Executing step: [fileProcessingStep]
+2024-11-26 14:32:16 ERROR AbstractStep:260 - Encountered an error executing step fileProcessingStep in job fileProcessingJob
+org.springframework.core.task.TaskRejectedException: ExecutorService in active state did not accept task: org.springframework.batch.repeat.support.TaskExecutorRepeatTemplate$ExecutingRunnable@5d5daf9f
+	at org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.execute(ThreadPoolTaskExecutor.java:391) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.batch.repeat.support.TaskExecutorRepeatTemplate.getNextResult(TaskExecutorRepeatTemplate.java:125) ~[spring-batch-infrastructure-5.1.2.jar:5.1.2]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206) ~[spring-batch-infrastructure-5.1.2.jar:5.1.2]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140) ~[spring-batch-infrastructure-5.1.2.jar:5.1.2]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:235) ~[spring-batch-core-5.2.0-SNAPSHOT.jar:5.2.0-SNAPSHOT]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:230) ~[spring-batch-core-5.2.0-SNAPSHOT.jar:5.2.0-SNAPSHOT]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153) ~[spring-batch-core-5.2.0-SNAPSHOT.jar:5.2.0-SNAPSHOT]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:408) ~[spring-batch-core-5.2.0-SNAPSHOT.jar:5.2.0-SNAPSHOT]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:127) ~[spring-batch-core-5.2.0-SNAPSHOT.jar:5.2.0-SNAPSHOT]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:307) ~[spring-batch-core-5.2.0-SNAPSHOT.jar:5.2.0-SNAPSHOT]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher$1.run(TaskExecutorJobLauncher.java:155) ~[spring-batch-core-5.2.0-SNAPSHOT.jar:5.2.0-SNAPSHOT]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) ~[spring-core-6.1.13.jar:6.1.13]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:146) ~[spring-batch-core-5.2.0-SNAPSHOT.jar:5.2.0-SNAPSHOT]
+	at com.example.BatchProcessor.controller.BatchController.startBatchJob(BatchController.java:51) ~[classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at java.base/java.lang.Thread.run(Thread.java:1575) [?:?]
+Caused by: java.util.concurrent.RejectedExecutionException: Task org.springframework.batch.repeat.support.TaskExecutorRepeatTemplate$ExecutingRunnable@5d5daf9f rejected from org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor$1@56ec133d[Running, pool size = 2, active threads = 2, queued tasks = 1, completed tasks = 1]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2082) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1377) ~[?:?]
+	at org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor$1.execute(ThreadPoolTaskExecutor.java:295) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.execute(ThreadPoolTaskExecutor.java:388) ~[spring-context-6.1.13.jar:6.1.13]
+	... 61 more
+2024-11-26 14:32:16 INFO  AbstractStep:269 - Step: [fileProcessingStep] executed in 8s995ms
+2024-11-26 14:32:16 INFO  TaskExecutorJobLauncher:159 - Job: [SimpleJob: [name=fileProcessingJob]] completed with the following parameters: [{'ruta':'{value=C:\Users\jbernaldez\Desktop\Juan_repositorio\Spring\SpringBatch\BatchProcessor\BatchProcessor\src\main\resources\input.csv, type=class java.lang.String, identifying=true}'}] and the following status: [FAILED] in 9s58ms
+2024-11-26 14:32:16 WARN  DefaultHandlerExceptionResolver:247 - Resolved [org.springframework.web.context.request.async.AsyncRequestNotUsableException: ServletOutputStream failed to flush: java.nio.channels.ClosedChannelException]
+2024-11-26 14:32:16 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 14:32:16 INFO  HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+2024-11-26 14:32:16 INFO  HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+2024-11-26 14:32:44 INFO  BatchProcessorApplication:50 - Starting BatchProcessorApplication using Java 23.0.1 with PID 14204 (C:\Users\jbernaldez\Desktop\Juan_repositorio\Spring\SpringBatch\BatchProcessor\BatchProcessor\target\classes started by jbernaldez in C:\Users\jbernaldez\Desktop\Juan_repositorio\Spring\SpringBatch\BatchProcessor)
+2024-11-26 14:32:44 INFO  BatchProcessorApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-11-26 14:32:44 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-26 14:32:44 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-26 14:32:45 INFO  BatchRegistrar:84 - Bean jobRepository already defined in the application context, skipping the registration of a jobRepository
+2024-11-26 14:32:45 INFO  BatchRegistrar:200 - Bean jobLauncher already defined in the application context, skipping the registration of a jobLauncher
+2024-11-26 14:32:45 INFO  BatchRegistrar:70 - Finished Spring Batch infrastructure beans configuration in 10 ms.
+2024-11-26 14:32:45 INFO  BatchRegistrar:84 - Bean jobRepository already defined in the application context, skipping the registration of a jobRepository
+2024-11-26 14:32:45 INFO  BatchRegistrar:151 - Bean jobExplorer already defined in the application context, skipping the registration of a jobExplorer
+2024-11-26 14:32:45 INFO  BatchRegistrar:200 - Bean jobLauncher already defined in the application context, skipping the registration of a jobLauncher
+2024-11-26 14:32:45 INFO  BatchRegistrar:219 - Bean jobRegistry already defined in the application context, skipping the registration of a jobRegistry
+2024-11-26 14:32:45 INFO  BatchRegistrar:231 - Bean jobRegistrySmartInitializingSingleton already defined in the application context, skipping the registration of a jobRegistrySmartInitializingSingleton
+2024-11-26 14:32:45 INFO  BatchRegistrar:245 - Bean jobOperator already defined in the application context, skipping the registration of a jobOperator
+2024-11-26 14:32:45 INFO  BatchRegistrar:70 - Finished Spring Batch infrastructure beans configuration in 2 ms.
+2024-11-26 14:32:45 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26 14:32:45 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces.
+2024-11-26 14:32:47 INFO  TomcatWebServer:111 - Tomcat initialized with port 8080 (http)
+2024-11-26 14:32:47 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-26 14:32:47 INFO  StandardService:173 - Starting service [Tomcat]
+2024-11-26 14:32:47 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-26 14:32:47 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2024-11-26 14:32:47 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 2783 ms
+2024-11-26 14:32:47 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-26 14:32:47 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-26 14:32:47 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-11-26 14:32:48 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26 14:32:48 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2024-11-26 14:32:49 INFO  HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f6b4fd0
+2024-11-26 14:32:49 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2024-11-26 14:32:49 WARN  deprecation:153 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-26 14:32:50 INFO  EntityInstantiatorPojoStandard:53 - HHH000182: No default (no-argument) constructor for class: com.example.BatchProcessor.model.Empleo (class must be instantiated by Interceptor)
+2024-11-26 14:32:50 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-26 14:32:50 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Error executing DDL "alter table persona drop foreign key FKa39oc41d0cpucrjuud3cjrddg" via JDBC [Table 'data.persona' doesn't exist]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table persona drop foreign key FKa39oc41d0cpucrjuud3cjrddg" via JDBC [Table 'data.persona' doesn't exist]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:476) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropConstraintsTablesSequences(SchemaDropperImpl.java:242) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:215) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:185) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:155) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:115) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:238) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430) ~[?:?]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) [spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) [spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) [spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) [spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) [spring-boot-3.3.4.jar:3.3.4]
+	at com.example.BatchProcessor.BatchProcessorApplication.main(BatchProcessorApplication.java:19) [classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.3.4.jar:3.3.4]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'data.persona' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.1.0.jar:?]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	... 42 more
+2024-11-26 14:32:50 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 14:32:51 INFO  BatchObservabilityBeanPostProcessor:62 - No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2024-11-26 14:32:51 INFO  BatchObservabilityBeanPostProcessor:62 - No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2024-11-26 14:32:51 WARN  JpaBaseConfiguration$JpaWebConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26 14:32:52 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2024-11-26 14:32:52 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-26 14:32:52 INFO  TomcatWebServer:243 - Tomcat started on port 8080 (http) with context path '/'
+2024-11-26 14:32:52 INFO  BatchProcessorApplication:56 - Started BatchProcessorApplication in 8.496 seconds (process running for 10.45)
+2024-11-26 14:32:53 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-26 14:32:53 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2024-11-26 14:32:53 INFO  DispatcherServlet:554 - Completed initialization in 1 ms
+2024-11-26 14:32:53 INFO  TaskExecutorJobLauncher:152 - Job: [SimpleJob: [name=fileProcessingJob]] launched with the following parameters: [{'ruta':'{value=C:\Users\jbernaldez\Desktop\Juan_repositorio\Spring\SpringBatch\BatchProcessor\BatchProcessor\src\main\resources\input.csv, type=class java.lang.String, identifying=true}'}]
+2024-11-26 14:32:53 INFO  SimpleStepHandler:150 - Executing step: [fileProcessingStep]
+2024-11-26 14:32:54 INFO  AbstractStep:269 - Step: [fileProcessingStep] executed in 215ms
+2024-11-26 14:32:54 INFO  TaskExecutorJobLauncher:159 - Job: [SimpleJob: [name=fileProcessingJob]] completed with the following parameters: [{'ruta':'{value=C:\Users\jbernaldez\Desktop\Juan_repositorio\Spring\SpringBatch\BatchProcessor\BatchProcessor\src\main\resources\input.csv, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 273ms
+2024-11-26 14:33:36 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 14:33:36 INFO  HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+2024-11-26 14:33:36 INFO  HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+2024-11-26 14:33:41 INFO  BatchProcessorApplication:50 - Starting BatchProcessorApplication using Java 23.0.1 with PID 12312 (C:\Users\jbernaldez\Desktop\Juan_repositorio\Spring\SpringBatch\BatchProcessor\BatchProcessor\target\classes started by jbernaldez in C:\Users\jbernaldez\Desktop\Juan_repositorio\Spring\SpringBatch\BatchProcessor)
+2024-11-26 14:33:41 INFO  BatchProcessorApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-11-26 14:33:41 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-26 14:33:41 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-26 14:33:42 INFO  BatchRegistrar:84 - Bean jobRepository already defined in the application context, skipping the registration of a jobRepository
+2024-11-26 14:33:42 INFO  BatchRegistrar:200 - Bean jobLauncher already defined in the application context, skipping the registration of a jobLauncher
+2024-11-26 14:33:42 INFO  BatchRegistrar:70 - Finished Spring Batch infrastructure beans configuration in 9 ms.
+2024-11-26 14:33:42 INFO  BatchRegistrar:84 - Bean jobRepository already defined in the application context, skipping the registration of a jobRepository
+2024-11-26 14:33:42 INFO  BatchRegistrar:151 - Bean jobExplorer already defined in the application context, skipping the registration of a jobExplorer
+2024-11-26 14:33:42 INFO  BatchRegistrar:200 - Bean jobLauncher already defined in the application context, skipping the registration of a jobLauncher
+2024-11-26 14:33:42 INFO  BatchRegistrar:219 - Bean jobRegistry already defined in the application context, skipping the registration of a jobRegistry
+2024-11-26 14:33:42 INFO  BatchRegistrar:231 - Bean jobRegistrySmartInitializingSingleton already defined in the application context, skipping the registration of a jobRegistrySmartInitializingSingleton
+2024-11-26 14:33:42 INFO  BatchRegistrar:245 - Bean jobOperator already defined in the application context, skipping the registration of a jobOperator
+2024-11-26 14:33:42 INFO  BatchRegistrar:70 - Finished Spring Batch infrastructure beans configuration in 2 ms.
+2024-11-26 14:33:42 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26 14:33:42 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
+2024-11-26 14:33:43 INFO  TomcatWebServer:111 - Tomcat initialized with port 8080 (http)
+2024-11-26 14:33:43 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-26 14:33:43 INFO  StandardService:173 - Starting service [Tomcat]
+2024-11-26 14:33:43 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-26 14:33:43 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2024-11-26 14:33:43 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 2624 ms
+2024-11-26 14:33:44 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-26 14:33:44 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-26 14:33:44 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-11-26 14:33:44 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26 14:33:44 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2024-11-26 14:33:45 INFO  HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30847139
+2024-11-26 14:33:45 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2024-11-26 14:33:45 WARN  deprecation:153 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-26 14:33:46 INFO  EntityInstantiatorPojoStandard:53 - HHH000182: No default (no-argument) constructor for class: com.example.BatchProcessor.model.Empleo (class must be instantiated by Interceptor)
+2024-11-26 14:33:46 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-26 14:33:46 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 14:33:47 INFO  BatchObservabilityBeanPostProcessor:62 - No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2024-11-26 14:33:47 INFO  BatchObservabilityBeanPostProcessor:62 - No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2024-11-26 14:33:47 WARN  JpaBaseConfiguration$JpaWebConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26 14:33:48 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2024-11-26 14:33:48 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-26 14:33:48 INFO  TomcatWebServer:243 - Tomcat started on port 8080 (http) with context path '/'
+2024-11-26 14:33:48 INFO  BatchProcessorApplication:56 - Started BatchProcessorApplication in 8.059 seconds (process running for 9.75)
+2024-11-26 14:33:55 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 14:33:55 INFO  HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+2024-11-26 14:33:55 INFO  HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+2024-11-26 14:33:58 INFO  BatchProcessorApplication:50 - Starting BatchProcessorApplication using Java 23.0.1 with PID 4832 (C:\Users\jbernaldez\Desktop\Juan_repositorio\Spring\SpringBatch\BatchProcessor\BatchProcessor\target\classes started by jbernaldez in C:\Users\jbernaldez\Desktop\Juan_repositorio\Spring\SpringBatch\BatchProcessor)
+2024-11-26 14:33:58 INFO  BatchProcessorApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-11-26 14:33:58 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-26 14:33:58 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-26 14:33:59 INFO  BatchRegistrar:84 - Bean jobRepository already defined in the application context, skipping the registration of a jobRepository
+2024-11-26 14:33:59 INFO  BatchRegistrar:200 - Bean jobLauncher already defined in the application context, skipping the registration of a jobLauncher
+2024-11-26 14:33:59 INFO  BatchRegistrar:70 - Finished Spring Batch infrastructure beans configuration in 11 ms.
+2024-11-26 14:33:59 INFO  BatchRegistrar:84 - Bean jobRepository already defined in the application context, skipping the registration of a jobRepository
+2024-11-26 14:33:59 INFO  BatchRegistrar:151 - Bean jobExplorer already defined in the application context, skipping the registration of a jobExplorer
+2024-11-26 14:33:59 INFO  BatchRegistrar:200 - Bean jobLauncher already defined in the application context, skipping the registration of a jobLauncher
+2024-11-26 14:33:59 INFO  BatchRegistrar:219 - Bean jobRegistry already defined in the application context, skipping the registration of a jobRegistry
+2024-11-26 14:33:59 INFO  BatchRegistrar:231 - Bean jobRegistrySmartInitializingSingleton already defined in the application context, skipping the registration of a jobRegistrySmartInitializingSingleton
+2024-11-26 14:33:59 INFO  BatchRegistrar:245 - Bean jobOperator already defined in the application context, skipping the registration of a jobOperator
+2024-11-26 14:33:59 INFO  BatchRegistrar:70 - Finished Spring Batch infrastructure beans configuration in 3 ms.
+2024-11-26 14:33:59 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26 14:33:59 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 65 ms. Found 2 JPA repository interfaces.
+2024-11-26 14:34:01 INFO  TomcatWebServer:111 - Tomcat initialized with port 8080 (http)
+2024-11-26 14:34:01 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-26 14:34:01 INFO  StandardService:173 - Starting service [Tomcat]
+2024-11-26 14:34:01 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-26 14:34:01 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2024-11-26 14:34:01 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 2512 ms
+2024-11-26 14:34:01 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-26 14:34:01 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-26 14:34:01 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-11-26 14:34:02 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26 14:34:02 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2024-11-26 14:34:02 INFO  HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3202915e
+2024-11-26 14:34:02 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2024-11-26 14:34:03 WARN  deprecation:153 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-26 14:34:03 INFO  EntityInstantiatorPojoStandard:53 - HHH000182: No default (no-argument) constructor for class: com.example.BatchProcessor.model.Empleo (class must be instantiated by Interceptor)
+2024-11-26 14:34:04 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-26 14:34:04 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Error executing DDL "alter table persona drop foreign key FKa39oc41d0cpucrjuud3cjrddg" via JDBC [Table 'data.persona' doesn't exist]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table persona drop foreign key FKa39oc41d0cpucrjuud3cjrddg" via JDBC [Table 'data.persona' doesn't exist]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:476) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropConstraintsTablesSequences(SchemaDropperImpl.java:242) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:215) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:185) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:155) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:115) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:238) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430) ~[?:?]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) [spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) [spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) [spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) [spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) [spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) [spring-boot-3.3.4.jar:3.3.4]
+	at com.example.BatchProcessor.BatchProcessorApplication.main(BatchProcessorApplication.java:19) [classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.3.4.jar:3.3.4]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'data.persona' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.1.0.jar:?]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	... 42 more
+2024-11-26 14:34:04 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 14:34:04 INFO  BatchObservabilityBeanPostProcessor:62 - No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2024-11-26 14:34:04 INFO  BatchObservabilityBeanPostProcessor:62 - No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2024-11-26 14:34:05 WARN  JpaBaseConfiguration$JpaWebConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26 14:34:06 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2024-11-26 14:34:06 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-26 14:34:06 INFO  TomcatWebServer:243 - Tomcat started on port 8080 (http) with context path '/'
+2024-11-26 14:34:06 INFO  BatchProcessorApplication:56 - Started BatchProcessorApplication in 7.884 seconds (process running for 9.636)
+2024-11-26 14:34:08 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-26 14:34:08 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2024-11-26 14:34:08 INFO  DispatcherServlet:554 - Completed initialization in 5 ms
+2024-11-26 14:34:08 INFO  TaskExecutorJobLauncher:152 - Job: [SimpleJob: [name=fileProcessingJob]] launched with the following parameters: [{'ruta':'{value=C:\Users\jbernaldez\Desktop\Juan_repositorio\Spring\SpringBatch\BatchProcessor\BatchProcessor\src\main\resources\input.csv, type=class java.lang.String, identifying=true}'}]
+2024-11-26 14:34:08 INFO  SimpleStepHandler:150 - Executing step: [fileProcessingStep]
+2024-11-26 14:34:08 INFO  AbstractStep:269 - Step: [fileProcessingStep] executed in 190ms
+2024-11-26 14:34:08 INFO  TaskExecutorJobLauncher:159 - Job: [SimpleJob: [name=fileProcessingJob]] completed with the following parameters: [{'ruta':'{value=C:\Users\jbernaldez\Desktop\Juan_repositorio\Spring\SpringBatch\BatchProcessor\BatchProcessor\src\main\resources\input.csv, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 262ms
+2024-11-26 14:34:12 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 14:34:12 INFO  HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+2024-11-26 14:34:12 INFO  HikariDataSource:351 - HikariPool-1 - Shutdown completed.

@@ -7,7 +7,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6885de12-9007-48f2-9614-97a76ba2a7be" name="Changes" comment="" />
+    <list default="true" id="6885de12-9007-48f2-9614-97a76ba2a7be" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../BatchProcessor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BatchProcessor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BatchProcessor/BatchProcessor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BatchProcessor/BatchProcessor/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/BatchProcessorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/BatchProcessorApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/BatchConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/BatchConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/BatchConfigProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/BatchConfigProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/BatchJobLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/BatchJobLauncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/DatabaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/DatabaseConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/controller/BatchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/controller/BatchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/job/FileProcessingJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/job/FileProcessingJob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/model/Empleo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/model/Empleo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/service/BatchTablesCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/service/BatchTablesCreate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/DatabaseWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/DatabaseWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BatchProcessor/BatchProcessor/src/main/resources/input.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../BatchProcessor/BatchProcessor/src/main/resources/input.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BatchProcessor/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../BatchProcessor/logs/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BatchProcess.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BatchProcess.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchProcess/src/main/java/com/example/BatchProcess/dto/EquipoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchProcess/src/main/java/com/example/BatchProcess/dto/JugadorDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchProcess/src/main/java/com/example/BatchProcess/dto/ParticipacionDTO.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +41,9 @@
         <option value="JUnit5 Test Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -70,14 +93,15 @@
     "Spring Boot.SoccerApplication.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/jbernaldez/Downloads/Juan_repositorio/Spring/SpringBatch/BatchProcess",
+    "last_opened_file_path": "C:/Users/User/Desktop/Juan_repositorio/Spring/SpringBatch/FalsosBatch/BatchProcess",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "settings.sync",
@@ -94,86 +118,7 @@
       <recent name="com.example.soccer" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JugadorServiceTest.updateJugador">
-    <configuration name="JugadorServiceTest.updateJugador" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Soccer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.soccer.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.soccer.service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.soccer.service.JugadorServiceTest" />
-      <option name="METHOD_NAME" value="updateJugador" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParticipacionServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Soccer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.soccer.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.soccer.service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.soccer.service.ParticipacionServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParticipacionServiceTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Soccer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.soccer.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.soccer.service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.soccer.service.ParticipacionServiceTest" />
-      <option name="METHOD_NAME" value="findAll" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParticipacionServiceTest.findById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Soccer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.soccer.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.soccer.service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.soccer.service.ParticipacionServiceTest" />
-      <option name="METHOD_NAME" value="findById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParticipacionServiceTest.updateParticipacion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Soccer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.soccer.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.soccer.service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.soccer.service.ParticipacionServiceTest" />
-      <option name="METHOD_NAME" value="updateParticipacion" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="BatchProcessApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="BatchProcess" />
@@ -182,23 +127,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SoccerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="Soccer" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.soccer.SoccerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.ParticipacionServiceTest.findById" />
-        <item itemvalue="JUnit.ParticipacionServiceTest.findAll" />
-        <item itemvalue="JUnit.ParticipacionServiceTest.updateParticipacion" />
-        <item itemvalue="JUnit.ParticipacionServiceTest" />
-        <item itemvalue="JUnit.JugadorServiceTest.updateJugador" />
-      </list>
-    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -224,6 +160,11 @@
       <workItem from="1729195845470" duration="1804000" />
       <workItem from="1732125555684" duration="5000" />
       <workItem from="1732125569136" duration="104000" />
+      <workItem from="1732634537087" duration="120000" />
+      <workItem from="1732650505586" duration="180000" />
+      <workItem from="1732651098965" duration="27000" />
+      <workItem from="1732651164443" duration="1000" />
+      <workItem from="1732651193524" duration="112000" />
     </task>
     <servers />
   </component>

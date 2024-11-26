@@ -1,4 +1,4 @@
-package com.example.BatchProcessor.writer;  // Asegúrate de usar 'writer' en lugar de 'writter'
+package com.example.BatchProcessor.writer;
 
 import com.example.BatchProcessor.model.Empleo;
 import com.example.BatchProcessor.model.Persona;
@@ -32,7 +32,7 @@ public class DatabaseWriter implements ItemWriter<Persona> {  // Renombrado a Da
         // Iterar sobre los elementos del chunk y guardarlos
         List<? extends Persona> personas = chunk.getItems();
 
-        // Guardar los empleos primero (evitar duplicados)
+        // Guardar los empleos primero (evitar duplicados)   // procesamiento secuencial (en serie)
         List<Empleo> empleosSinId = personas.stream()
                 .map(Persona::getEmpleo)
                 .filter(empleo -> empleo != null && empleo.getEmpleoId() == null)

@@ -25,7 +25,7 @@ public class BatchTablesCreate {
             System.out.println("Creando tablas si no existen...");
 
             // SQL para crear las tablas
-            String[] CreateTableSqlStatements = {
+            String[] CreateTableSql = {
                     "CREATE TABLE IF NOT EXISTS BATCH_JOB_INSTANCE (" +
                             "JOB_INSTANCE_ID BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY, " +
                             "VERSION BIGINT, " +
@@ -101,19 +101,19 @@ public class BatchTablesCreate {
             };
 
             // Ejecutar cada sentencia SQL
-            for (String sql : CreateTableSqlStatements) {
+            for (String sql : CreateTableSql) {
                 jdbcTemplate.update(sql);
             }
 
             // Sentencias SQL para insertar valores en las secuencias
-            String[] insertSequenceStatements = {
+            String[] insertSql = {
                     "INSERT INTO BATCH_STEP_EXECUTION_SEQ values(0);",
                     "INSERT INTO BATCH_JOB_EXECUTION_SEQ values(0);",
                     "INSERT INTO BATCH_JOB_SEQ values(0);"
             };
 
             // Ejecutar las sentencias de inserción
-            jdbcTemplate.batchUpdate(insertSequenceStatements);
+            jdbcTemplate.batchUpdate(insertSql);
 
             System.out.println("Tablas creadas o ya existentes.");
         } catch (Exception e) {

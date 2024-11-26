@@ -16,7 +16,7 @@ import javax.sql.DataSource;
 public class DatabaseConfig {
 
     //Mediante esta implementacion estamos tomando los valores de la clase DataSourceConfigProperties que tenemos inyectada
-    // Inyectar la clase DataSourceConfig que contiene las propiedades de la base de datos
+    // Inyectar la clase DataSourceConfig que contiene las propiedades de la base de datos que comienzan por spring.datasource
     private final DataSourceConfigProperties dataSourceConfigProperties;
 
     public DatabaseConfig(DataSourceConfigProperties dataSourceConfigProperties) {
@@ -27,6 +27,9 @@ public class DatabaseConfig {
     public DataSource dataSource() {
         // Usar la configuración proporcionada por DataSourceConfig
         DataSourceConfigProperties.HikariConfig hikariConfig = dataSourceConfigProperties.getHikari();
+
+        // Creamos un DataSource que servirá como gestor de conexiones a la base de datos, usamos hikari para reducir el costo de establecer nuevas conexiones constantemente
+        // ya que nos permite: Reutilización de conexiones, Manejo automático de conexiones inactivas, Resiliencia y estabilidad, Configuración flexible y ademas Compatibilidad y estandarización
         HikariDataSource dataSource = new HikariDataSource();
 
         // Configuración del datasource
@@ -42,7 +45,6 @@ public class DatabaseConfig {
 
         return dataSource;
     }
-
 
     //Mediante esta implementacion estabamos leyendo desde el archivo de propiedades application.properties directamente
 

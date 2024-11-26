@@ -67,7 +67,7 @@
 		<dependency>
 			<groupId>org.springframework.batch</groupId>
 			<artifactId>spring-batch-core</artifactId>
-			<version>5.2.0-SNAPSHOT</version> <!-- O la versión adecuada para tu proyecto -->
+			<version>5.1.2</version> <!-- O la versión adecuada para tu proyecto -->
 		</dependency>
 
 		<dependency>

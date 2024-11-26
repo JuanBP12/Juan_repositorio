@@ -14,14 +14,17 @@ public class Empleo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long empleoId;
+    private String nombreEmpleo;
+
+    public Empleo() {
+
+    }
 
     public Empleo(String nombreEmpleo) {
         this.nombreEmpleo = nombreEmpleo;
     }
 
     // getters y setters
-    private String nombreEmpleo;
-
     public Long getEmpleoId() {
         return empleoId;
     }

@@ -34,7 +34,7 @@ public class FileValidator implements Validator<FileRecord> {
             throw new ValidationException("Invalid record: 'apellido' field is missing or empty");
         }
         if (record.getNombreEmpleo() == null || record.getNombreEmpleo().isBlank()) {
-            throw new ValidationException("Invalid record: 'nombreEmpleo' field is missing or empty");
+            System.out.println("Persona sin empleo "+record.getNombre()+" "+record.getApellido());
         }
 
         // Post-validación: Validar que el nombre de empleo es uno de los nombres válidos
@@ -50,7 +50,7 @@ public class FileValidator implements Validator<FileRecord> {
      */
     private void postValidateEmpleo(String nombreEmpleo) throws ValidationException {
         // Ejemplo: Validar que el nombre de empleo esté en una lista predefinida de empleos válidos
-        String[] validEmpleos = {"Desarrollador", "Diseñador", "Analista", "Gerente", ""};
+        String[] validEmpleos = {"Desarrollador", "Diseñador", "Analista", "Gerente", " "};
 
         boolean isValid = false;
         for (String empleo : validEmpleos) {

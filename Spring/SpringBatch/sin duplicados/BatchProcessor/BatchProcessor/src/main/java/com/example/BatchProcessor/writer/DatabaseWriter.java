@@ -77,10 +77,12 @@ public class DatabaseWriter implements ItemWriter<Persona> {  // Renombrado a Da
                         existente.setEmpleo(nueva.getEmpleo());
                         System.out.println("Empleo actualizado para: " + existente.getNombreCompleto());
                         personaRepository.save(existente); // Guardar los cambios
+                    }else{
+                        System.out.println("Empleo no actualizado para: " + existente.getNombreCompleto()+" porque sigue teniendo el mismo empleo");
                     }
                 } else {
                     // Si no se encuentra la persona, loguear el evento y continuar con la siguiente
-                    System.out.println("Persona no encontrada en la base de datos: " + nueva.getNombreCompleto());
+                    System.out.println("Empleo no actualizado, persona no encontrada en la base de datos: " + nueva.getNombreCompleto());
                 }
             }
 

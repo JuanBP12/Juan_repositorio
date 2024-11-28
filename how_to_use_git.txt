@@ -1,7 +1,7 @@
 -Configuración INICIAL repositorio-
 
 iniciar repositorio: 	git init
-añadir origen:	  	git remote add "origen" "url_repositorio"			ej:	git remote add gitlab https://gitlab.com/JuanBP97/Juan_repositorio.git
+añadir origen:	  	git remote add "origen" "url_repositorio"			ej: git remote add gitlab https://gitlab.com/JuanBP97/Juan_repositorio.git
 eliminar origen:  	git remote remove "origen"
 ver datos origen:	git remote show "origen"
 ver rama actual:  	git Branch

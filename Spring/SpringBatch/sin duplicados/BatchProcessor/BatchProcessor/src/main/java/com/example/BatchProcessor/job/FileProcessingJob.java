@@ -45,7 +45,7 @@ public class FileProcessingJob {
                 .build();
     }
 
-    @Bean(name = "step")
+    @Bean(name = "step") // procesamiento secuencial (en serie)
     public Step step(JobRepository jobRepository, JpaTransactionManager transactionManager,
                      CsvFileReader reader, RecordProcessor processor, DatabaseWriter writer) {
         // Aquí definimos el paso utilizando los beans y JobRepository

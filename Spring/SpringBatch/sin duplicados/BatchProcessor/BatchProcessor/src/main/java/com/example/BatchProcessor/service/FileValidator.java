@@ -50,7 +50,7 @@ public class FileValidator implements Validator<FileRecord> {
      */
     private void postValidateEmpleo(String nombreEmpleo) throws ValidationException {
         // Ejemplo: Validar que el nombre de empleo esté en una lista predefinida de empleos válidos
-        String[] validEmpleos = {"Desarrollador", "Diseñador", "Analista", "Gerente"};
+        String[] validEmpleos = {"Desarrollador", "Diseñador", "Analista", "Gerente", ""};
 
         boolean isValid = false;
         for (String empleo : validEmpleos) {

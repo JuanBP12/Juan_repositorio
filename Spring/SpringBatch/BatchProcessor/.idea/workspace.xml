@@ -7,7 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6885de12-9007-48f2-9614-97a76ba2a7be" name="Changes" comment="" />
+    <list default="true" id="6885de12-9007-48f2-9614-97a76ba2a7be" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../paralelo/BatchProcessor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../paralelo/BatchProcessor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sin duplicados/BatchProcessor/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sin duplicados/BatchProcessor/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sin duplicados/BatchProcessor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sin duplicados/BatchProcessor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sin duplicados/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/job/FileProcessingJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sin duplicados/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/job/FileProcessingJob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sin duplicados/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/service/RecordProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sin duplicados/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/service/RecordProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sin duplicados/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/DatabaseWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sin duplicados/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/DatabaseWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../how_to_use_git.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../how_to_use_git.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +87,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/User/Downloads/Juan_repositorio/Spring/SpringBatch/BatchProcessor",
+    "last_opened_file_path": "C:/Users/jbernaldez/Desktop/Juan_repositorio/Spring/SpringBatch/BatchProcessor",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -137,14 +145,6 @@
         <item itemvalue="Application.BatchProcessorApplication" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

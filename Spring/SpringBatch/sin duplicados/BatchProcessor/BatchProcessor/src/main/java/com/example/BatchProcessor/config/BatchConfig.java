@@ -40,7 +40,7 @@ import java.util.Collection;
 @EnableBatchProcessing
 public class BatchConfig {
 
-    private DataSource dataSource;
+    private final DataSource dataSource;
 
     public BatchConfig(DataSource dataSource) {
         this.dataSource = dataSource;

@@ -10,7 +10,7 @@ import org.springframework.batch.item.Chunk;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 
@@ -32,19 +32,22 @@ public class DatabaseWriter implements ItemWriter<Persona> {  // Renombrado a Da
         this.entityManager = entityManager;
     }
 
-
+    @Transactional
     @Override
     public void write(Chunk<? extends Persona> chunk) throws Exception {
         try {
             // Obtener las personas que vienen en el chunk
             List<? extends Persona> personas = chunk.getItems();
+
+
+
             // Extraer los empleos de las personas, asegurándonos de no tener duplicados
             List<Empleo> empleos = personas.stream()
                     .map(Persona::getEmpleo)
                     .distinct() // Evita los duplicados de empleos
                     .collect(Collectors.toList());
 
-            List<Empleo> empleosPersistidos = empleoRepository.saveAll(empleos);
+            List<Empleo> empleosPersistidos = empleoRepository.saveAll(empleos);// Guardar los empleos primero, para evitar errores
             empleoRepository.flush();// Asegurarse de que los cambios se persistan en la base de datos
 
             // Asociar las instancias persistidas de Empleo a las personas
@@ -57,6 +60,33 @@ public class DatabaseWriter implements ItemWriter<Persona> {  // Renombrado a Da
                 persona.setEmpleo(empleoPersistido); // Actualizamos el empleo en la persona
             });
 
+
+
+
+            // Aquí se realiza la comparación y actualización si el nombre de la persona ya existe en la base de datos pero el empleo cambia
+            for (Persona nueva : personas) {
+                // Verificar si ya existe una persona con el mismo nombre
+                Optional<Persona> existenteOpt = personaRepository.findByNombreCompleto(nueva.getNombreCompleto());
+
+                if (existenteOpt.isPresent()) {
+                    Persona existente = existenteOpt.get();
+
+                    // Si existe, actualizamos el empleo de esa persona
+                    if (!existente.getEmpleo().equals(nueva.getEmpleo())) {
+                        // Solo actualizamos si el empleo ha cambiado
+                        existente.setEmpleo(nueva.getEmpleo());
+                        System.out.println("Empleo actualizado para: " + existente.getNombreCompleto());
+                        personaRepository.save(existente); // Guardar los cambios
+                    }
+                } else {
+                    // Si no se encuentra la persona, loguear el evento y continuar con la siguiente
+                    System.out.println("Persona no encontrada en la base de datos: " + nueva.getNombreCompleto());
+                }
+            }
+
+
+
+
             // Filtrar las personas para agregar solo las nuevas (evitar duplicados)
             List<Persona> personasNuevas = personas.stream()
                     // Evita guardar personas repetidas
@@ -65,15 +95,33 @@ public class DatabaseWriter implements ItemWriter<Persona> {  // Renombrado a Da
                     .collect(Collectors.toList());
             // Guardar todas las personas en una sola operación (solo las únicas)
             personaRepository.saveAll(personasNuevas);// Guardar los empleos primero, para evitar duplicados
+
             // Asegurarse de que los cambios se persistan en la base de datos
             personaRepository.flush();
-            // Limpiar el contexto de persistencia para evitar que JPA mantenga todas las entidades en memoria
-            entityManager.clear();  // Elimina las entidades del contexto de persistencia
+
+            // Limpiar el contexto de persistencia para liberar memoria
+            entityManager.clear();
 
         } catch (Exception e) {
             // Loguear el error para obtener más detalles
             System.err.println("Error durante el commit del chunk: " + e.getMessage());
             throw e;  // Re-lanzar la excepción para que Spring Batch maneje el rollback
         }
+
+        // antes guardabamos empleos y personas permitiendo duplicados
+
+        // Iterar sobre los elementos del chunk y guardarlos
+        /*List<? extends Persona> personas = chunk.getItems();
+
+        // Guardar los empleos primero
+        List<Empleo> empleosSinId = personas.stream()
+                .map(Persona::getEmpleo)
+                .filter(empleo -> empleo != null && empleo.getEmpleoId() == null)
+                .distinct() // Evita guardar empleos repetidos
+                .toList();
+        empleoRepository.saveAll(empleosSinId);
+
+        // Guardar todas las personas en una sola operación
+        personaRepository.saveAll(personas);*/
     }
 }

@@ -51,7 +51,7 @@ public class RecordProcessor implements ItemProcessor<FileRecord, Persona> {
             persona.setEmpleo(nuevoEmpleo);  // Asignar el nuevo empleo
         }
 
-        /* Antes guardabamos un empleo para cada persona admitiendo duplicados
+        /* Antes guardabamos un empleo para cada persona admitiendo duplicados de empleos
         * Persona persona = new Persona();
         persona.setNombreCompleto(record.getNombre() + " " + record.getApellido());
 

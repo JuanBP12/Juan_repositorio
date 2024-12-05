@@ -11,7 +11,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>BatchProcessor</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Soccer</name>
+	<name>BatchProcessor</name>
 	<description>Demo project for Equipos Spring Boot</description>
 	<url/>
 	<licenses>
@@ -69,7 +69,10 @@
 			<artifactId>spring-batch-core</artifactId>
 			<version>5.1.2</version> <!-- O la versión adecuada para tu proyecto -->
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-batch</artifactId>
@@ -80,6 +83,10 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
 			<version>6.1.13</version>  <!-- Ajusta la versión según la que estés usando -->
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 
 		<!-- Dependencia para el controlador JDBC de tu base de datos (por ejemplo, MySQL) -->
@@ -159,9 +166,6 @@
 			<groupId>com.fasterxml.jackson.dataformat</groupId>
 			<artifactId>jackson-dataformat-yaml</artifactId>
 		</dependency>
-
-
-
 
 		<dependency>
 			<groupId>org.springdoc</groupId>

@@ -7,6 +7,7 @@ import com.example.BatchProcessor.repository.EmpleoRepository;
 import io.micrometer.core.instrument.config.validate.ValidationException;
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 
 /**
@@ -14,6 +15,7 @@ import org.springframework.stereotype.Component;
  * Esta clase procesa los registros leídos de los archivos, convirtiéndolos en objetos Persona que se almacenarán
  * en la base de datos. Utiliza la información del empleo para asociarlo a la persona.
  */
+@Service
 @Component
 public class RecordProcessor implements ItemProcessor<FileRecord, Persona> {
 

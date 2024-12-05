@@ -6,6 +6,7 @@ import com.example.BatchProcessor.model.Persona;
 import org.springframework.batch.item.validator.ValidationException;
 import org.springframework.batch.item.validator.Validator;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 
 /**
@@ -13,6 +14,7 @@ import org.springframework.stereotype.Component;
  * Esta clase valida que los registros del archivo tengan el número esperado de columnas
  * y que los campos 'nombre', 'apellido' y 'nombreEmpleo' no sean nulos ni vacíos.
  */
+@Service
 @Component
 public class FileValidator implements Validator<FileRecord> {
     private static final int EXPECTED_COLUMN_COUNT = 3; // Cambiar según las columnas esperadas

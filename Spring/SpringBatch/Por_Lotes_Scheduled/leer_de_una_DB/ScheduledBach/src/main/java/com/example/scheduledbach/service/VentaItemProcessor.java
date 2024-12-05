@@ -3,7 +3,9 @@ package com.example.scheduledbach.service;
 import com.example.scheduledbach.models.Venta;
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
+@Service
 @Component
 public class VentaItemProcessor implements ItemProcessor<Venta, Venta> {
 

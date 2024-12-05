@@ -5,15 +5,18 @@ import com.example.scheduledbach.repository.VentaRepository;
 import org.springframework.batch.item.ItemReader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Iterator;
 
+@Service
 @Component
 public class JpaItemReader implements ItemReader<Venta> {
 
     private final VentaRepository ventaRepository;  // Inyectamos el repositorio JPA
-    private Iterator<Venta> currentIterator;  // Iterador para recorrer los resultados
+    private List<Venta> ventas;  // Lista que almacena todos los registros cargados
+    private int currentIndex = 0;  // Índice para realizar la lectura de la lista
 
     @Autowired
     public JpaItemReader(VentaRepository ventaRepository) {
@@ -22,16 +25,20 @@ public class JpaItemReader implements ItemReader<Venta> {
 
     @Override
     public Venta read() throws Exception {
-        // Si el iterador está vacío o no hay más elementos, cargamos los siguientes registros
-        if (currentIterator == null || !currentIterator.hasNext()) {
+        // Si no se ha cargado la lista de ventas, la cargamos
+        if (ventas == null) {
             cargarDatos();
         }
 
-        return currentIterator != null && currentIterator.hasNext() ? currentIterator.next() : null;
+        // Si hemos leído todos los elementos, retornamos null
+        if (ventas != null && currentIndex < ventas.size()) {
+            return ventas.get(currentIndex++);  // Devolvemos el siguiente elemento y avanzamos el índice
+        }
+
+        return null;  // Retorna null cuando ya no hay más elementos
     }
 
     private void cargarDatos() {
-        List<Venta> ventas = ventaRepository.findAll();  // Carga todas las ventas desde el repositorio
-        currentIterator = ventas != null ? ventas.iterator() : null;  // Crea el iterador si hay datos
+        ventas = ventaRepository.findAll();  // Carga todas las ventas desde el repositorio
     }
 }

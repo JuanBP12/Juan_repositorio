@@ -41,7 +41,7 @@ public class ProcessingJob {
     }
 
     @Bean(name = "step")
-    public Step step(JobRepository jobRepository, @Qualifier("transactionManager") JpaTransactionManager transactionManager,
+    public Step step(JobRepository jobRepository, JpaTransactionManager transactionManager,
                      JpaItemReader reader, VentaItemProcessor processor, VentaItemWriter writer) {
         // Aquí definimos el paso utilizando los beans y JobRepository
         return new StepBuilder("ProcessingStep", jobRepository)

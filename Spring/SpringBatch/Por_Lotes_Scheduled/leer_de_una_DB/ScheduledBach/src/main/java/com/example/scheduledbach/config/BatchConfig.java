@@ -2,12 +2,16 @@ package com.example.scheduledbach.config;
 
 import com.example.scheduledbach.reader.JpaItemReader;
 import com.example.scheduledbach.repository.VentaRepository;
+import com.example.scheduledbach.repository.VentaRepositoryTertiary;
+import com.example.scheduledbach.writer.VentaItemWriter;
 import jakarta.persistence.EntityManagerFactory;
 import org.springframework.batch.core.launch.JobLauncher;
 import org.springframework.batch.core.launch.support.TaskExecutorJobLauncher;
 import org.springframework.batch.core.repository.JobRepository;
 import org.springframework.batch.core.repository.support.JobRepositoryFactoryBean;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -42,7 +46,6 @@ public class BatchConfig {
         this.secondaryDataSource = secondaryDataSource;
         this.tertiaryDataSource = tertiaryDataSource;
     }
-
 
 
     // Configuración de JdbcTemplate para la creación de tablas (usando el segundo DataSource)
@@ -151,6 +154,15 @@ public class BatchConfig {
     @Bean
     public JpaItemReader jpaItemReader(VentaRepository ventaRepository) {
         return new JpaItemReader(ventaRepository);
+    }
+
+
+    // Configuración de JpaItemReader para usar el repositorio JPA directamente
+    @Bean
+    public VentaItemWriter ventaItemWriter(VentaRepositoryTertiary ventaRepository) {
+        LocalContainerEntityManagerFactoryBean entityManagerFactoryTertiary = entityManagerFactoryTertiary();
+        EntityManagerFactory entityManagerFactory = entityManagerFactoryTertiary.getObject(); // Obtén el EntityManagerFactory
+        return new VentaItemWriter(entityManagerFactory);
     }
 
 

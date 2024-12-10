@@ -2,6 +2,7 @@ package com.example.BatchProcessor.controller;
 
 import com.example.BatchProcessor.model.Persona;
 import com.example.BatchProcessor.reader.CsvFileReader;
+import com.example.BatchProcessor.repository.PersonaRepository;
 import com.example.BatchProcessor.service.PersonaService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
@@ -39,13 +40,15 @@ public class BatchController {
     private final Job fileProcessingJob;
     private final CsvFileReader csvFileReader;
     private final PersonaService personaService;
+    private final PersonaRepository personaRepository;
 
     @Autowired
-    public BatchController(JobLauncher jobLauncher, Job fileProcessingJob, CsvFileReader csvFileReader, PersonaService personaService) {
+    public BatchController(JobLauncher jobLauncher, Job fileProcessingJob, CsvFileReader csvFileReader, PersonaService personaService, PersonaRepository personaRepository) {
         this.jobLauncher = jobLauncher;
         this.fileProcessingJob = fileProcessingJob;
         this.csvFileReader = csvFileReader;
         this.personaService = personaService;
+        this.personaRepository = personaRepository;
     }
 
 
@@ -118,6 +121,16 @@ public class BatchController {
         try {
             List<Persona> personas = personaService.findAll();
             return ResponseEntity.ok(personas);
+        } catch (Exception e) {
+            return ResponseEntity.status(500).build();
+        }
+    }
+
+    @PostMapping("/SavePersonas")
+    public ResponseEntity<Void> savePersonas(@RequestBody List<Persona> personas) {
+        try {
+            personaRepository.saveAll(personas);
+            return ResponseEntity.ok().build();
         } catch (Exception e) {
             return ResponseEntity.status(500).build();
         }

@@ -79,7 +79,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/jbernaldez/Desktop/Juan_repositorio/Spring/SpringBatch/Por_Lotes_Scheduled/leer_de_una_DB/ScheduledBach",
+    "last_opened_file_path": "C:/Users/User/Desktop/Juan_repositorio/Spring/SpringBatch/General/BatchProcessor",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -138,6 +138,14 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -168,6 +176,8 @@
       <workItem from="1732721065307" duration="9091000" />
       <workItem from="1732736956708" duration="41000" />
       <workItem from="1732737349788" duration="4437000" />
+      <workItem from="1733856447257" duration="370000" />
+      <workItem from="1733856832357" duration="4668000" />
     </task>
     <servers />
   </component>

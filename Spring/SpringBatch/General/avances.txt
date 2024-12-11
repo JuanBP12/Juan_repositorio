@@ -1,3 +1,84 @@
+Instrucciones de uso:
+
+define tu clase entidad Especifica
+
+define el csv con los datos a procesar(en caso de leer de un csv) o modifica el endpoint al que atacamos(en caso de leer de una api)  //En el caso de leer de la api no hace falta configurar la entidad en job parameters  podemos dejar la generica
+
+en la clase controller en la seccion de creacion de los job parameters añade la siguiente linea:
+
+//.addString("entityClass", "com.example.BatchProcessor.model.GenericEntity") // Para la clase generica
+.addString("entityClass", "com.example.BatchProcessor.model.Persona") // Para nuestra nueva clase especifica
+ 
+
+ahora el programa consultara el jobparameter cuando necesite saber a que entidad debe mapear
+
+Finalmente ejecutamos, abrimos la direccion del swagger y enviamos el siguiente post:
+
+
+
+{
+    "reader": "csvItemReader",
+    "processor": "genericProcessor",
+    "writer": "databaseItemWriter"
+}
+
+
+
+
+en la parte inferior de la clase BatchConfig tenemos los siguientes beans para usar:
+
+	//Archivo
+    @Bean(name = "csvItemReader")
+    public CsvItemReader<?> csvItemReader() {
+        return new CsvItemReader<>();
+    }
+
+    @Bean(name = "csvItemWriter")
+    public CsvItemWriter<GenericEntity> csvItemWriter() {
+        return new CsvItemWriter<>();
+    }
+
+
+    //DB
+    @StepScope
+    @Bean(name = "databaseItemReader")
+    public JpaPagingItemReader<?> databaseReader(EntityManagerFactory entityManagerFactory,
+                                                 @Value("#{jobParameters['entityClass']}") String entityClassName) throws ClassNotFoundException {
+        return new DatabaseReader().databaseReader(entityManagerFactory, entityClassName);
+    }
+
+    @Bean(name = "databaseItemWriter")
+    public ItemWriter<GenericEntity> databaseItemWriter(GenericRepository genericRepository) {
+        return new DatabaseWriter.ManualItemWriter<>(genericRepository);
+    }
+
+
+    //API
+
+    // Bean para ApiItemReader genérico
+    @Bean(name = "apiItemReader")
+    public ApiItemReader<?> apiItemReader(RestTemplateBuilder restTemplateBuilder) {
+        return new ApiItemReader<>(restTemplateBuilder);
+    }
+
+    // Bean para ApiItemWriter genérico
+    @Bean(name = "apiItemWriter")
+    public ApiItemWriter<?> apiItemWriter(RestTemplateBuilder restTemplateBuilder) {
+        return new ApiItemWriter<>(restTemplateBuilder);
+    }
+
+    // Bean para PersonaApiWriter, que es una especialización de ApiItemWriter
+    @Bean(name = "personaApiWriter")
+    public ItemWriter<Persona> personaApiWriter(RestTemplateBuilder restTemplateBuilder) {
+        return new PersonaApiWriter(restTemplateBuilder);
+    }
+
+
+    //Processor
+    @Bean(name = "genericProcessor")
+    public <T> GenericProcessor<T> genericProcessor() {
+        return new GenericProcessor<>();
+    }
 
 
 
@@ -7,25 +88,69 @@
 
 
 
+avances:
+
+se lee de un csv genérico(o especifico) y se escribe en otro igual
+
+se lee de un csv genérico(o especifico) y se escribe en una tabla de la base de datos igual
+se lee de una tabla genérica(o especifica) de la base de datos y se escribe en un csv igual
 
 
+se lee de un csv genérico(o especifico) y se escribe en una api igual
+se lee de una tabla genérica(o especifica) de la base de datos y se escribe en una api igual
 
 
+se lee de una api (arreglar formato)
 
-
-
-se lee de un csv genérico y se escribe en otro genérico
-
-se lee de un csv genérico y se escribe en una base de datos
-se lee de una base de datos y se escribe en una csv genérico
-
-se lee de una api
 
 falta:
 
 se lee de una base de datos y se escribe en otra
 
-se escribe en una api
+falta modificar los metodos de lectura o escritura csv y database para que funcionen con la lectura de api
+
+
+
+
+
+
+
+ej lectura:
+
+// Lectura generica
+id,data
+1,Producto A
+2,Producto B
+3,Producto C
+4,Producto D
+5,Producto E
+
+// Lectura para personas
+personaId,nombreCompleto,empleo
+1,Juan Pérez,
+2,Ana García,Diseñador
+3,Luis López,Desarrollador
+4,Marta Fernández,Analista
+5,Carlos Gómez,Desarrollador
+6,Elena Ruiz,Diseñador
+7,Roberto Sánchez,Analista
+8,Lucía Moreno,Gerente
+9,Mario Ramírez,Gerente
+10,Sofía Castro,Diseñador
+
+//Lectura para escribir en api externa, ponemos solo el id que en el PersonaItemProcesor sera dejado a null, asi nos ahorramos generar la tabla Empleo del proyecto Api externa
+personaId,nombreCompleto,empleo
+99,Juano Pérez,4
+
+
+
+
+
+
+
+
+
+
 
 
 

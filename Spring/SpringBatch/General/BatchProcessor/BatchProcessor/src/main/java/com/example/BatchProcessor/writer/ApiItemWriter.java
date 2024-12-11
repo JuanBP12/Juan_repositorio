@@ -21,7 +21,7 @@ public class ApiItemWriter<T> implements ItemWriter<T> {
 
     // URL de la API donde se enviarán los datos
     //@Value("${batch.writer.apiUrl:http://localhost:8080/batch/SavePersonas}")
-    private final String apiUrl = "http://localhost:8080/batch/SavePersonas";
+    private final String apiUrl = "http://localhost:8081/batch/SavePersonas";
 
     public ApiItemWriter(RestTemplateBuilder restTemplateBuilder) {
         this.restTemplate = restTemplateBuilder.build();
@@ -31,8 +31,12 @@ public class ApiItemWriter<T> implements ItemWriter<T> {
     public void write(Chunk<? extends T> chunk) throws Exception {
         for (T item : chunk) {
             try {
+
+                // Convertir el Chunk a una lista de objetos Persona
+                List<T> items = (List<T>) chunk.getItems();
+
                 // Realiza una solicitud POST a la API para cada elemento
-                ResponseEntity<Void> response = restTemplate.postForEntity(apiUrl, item, Void.class);
+                ResponseEntity<Void> response = restTemplate.postForEntity(apiUrl, items, Void.class);
 
                 // Manejo de errores o validación de respuesta
                 if (!response.getStatusCode().is2xxSuccessful()) {

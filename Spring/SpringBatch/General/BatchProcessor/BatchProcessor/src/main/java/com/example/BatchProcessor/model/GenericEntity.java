@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "genericEntity")
+@Table(name = "generic_entity")
 public class GenericEntity {
 
     @Id

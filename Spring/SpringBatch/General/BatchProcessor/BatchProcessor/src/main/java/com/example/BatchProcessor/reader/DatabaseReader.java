@@ -15,12 +15,12 @@ import org.springframework.util.Assert;
 
 
 public class DatabaseReader {
-
+    // podemos tomar entityClass antes de ejecutar el job gracias a la anotacion @StepScope
     @Bean
     @StepScope
     public <T> JpaPagingItemReader<T> databaseReader(EntityManagerFactory entityManagerFactory,
                                                      @Value("#{jobParameters['entityClass']}") String entityClassName) throws ClassNotFoundException {
-
+        System.out.println(entityClassName);
         // Convertir el nombre de la clase a una instancia de Class
         Class<T> entityClass = (Class<T>) Class.forName(entityClassName);
 

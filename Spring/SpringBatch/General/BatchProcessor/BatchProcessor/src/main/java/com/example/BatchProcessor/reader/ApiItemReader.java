@@ -5,6 +5,8 @@ import org.springframework.batch.core.annotation.BeforeStep;
 import org.springframework.batch.item.ItemReader;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
@@ -23,10 +25,10 @@ import java.util.List;
 public class ApiItemReader<T> implements ItemReader<T> {
 
     private final RestTemplate restTemplate;
-    private final String apiUrl = "http://localhost:8080/batch/personas"; // Esto podría ser configurable.
+    private final String apiUrl = "http://localhost:8081/batch/personas"; // Esto podría ser configurable.
     private List<T> items;
     private int nextIndex;
-    private Class<T> type;
+    private Class<T> entityType;
 
     // Constructor donde el tipo de objeto es pasado como parámetro
     public ApiItemReader(RestTemplateBuilder restTemplateBuilder) {
@@ -42,8 +44,7 @@ public class ApiItemReader<T> implements ItemReader<T> {
 
         if (entityClassName != null) {
             // Cargar la clase usando Class.forName y asignarla al tipo generico
-            Class<T> clazz = (Class<T>) Class.forName(entityClassName);
-            this.type = clazz;
+            this.entityType = (Class<T>) Class.forName(entityClassName);
         } else {
             // Si no se pasa, manejar el error
             throw new IllegalArgumentException("Se debe proporcionar el parámetro 'entityClass'");
@@ -53,10 +54,12 @@ public class ApiItemReader<T> implements ItemReader<T> {
     @Override
     public T read() {
         if (items.isEmpty()) {
-            // Llamada a la API para obtener los datos y convertirlos al tipo genérico
-            ResponseEntity<T[]> response = restTemplate.getForEntity(apiUrl, (Class<T[]>) type.arrayType());
+            // Llamada a la API para obtener los datos y convertirlos al tipo genérico usando ParameterizedTypeReference
+            ParameterizedTypeReference<T[]> typeReference = new ParameterizedTypeReference<T[]>() {};
+            ResponseEntity<T[]> response = restTemplate.exchange(apiUrl, HttpMethod.GET, null, typeReference);
             if (response.getStatusCode().is2xxSuccessful() && response.getBody() != null) {
-                items = Arrays.asList(response.getBody());
+                List<T> entityList = Arrays.asList(response.getBody());
+                items = entityList;
             } else {
                 // Manejo de errores si no se puede obtener los datos de la API
                 throw new RuntimeException("Error al obtener datos de la API");

@@ -81,8 +81,8 @@ public class BatchController {
 
             // Ejecutar el Job con los parámetros opcionales
             JobParameters jobParameters = new JobParametersBuilder()        //IMPORTANTE
-                    .addString("entityClass", "com.example.BatchProcessor.model.GenericEntity") // Pasa la clase como String
-                    //.addString("entityClass", "com.example.BatchProcessor.model.Persona")
+                    //.addString("entityClass", "com.example.BatchProcessor.model.GenericEntity") // Pasa la clase como String
+                    .addString("entityClass", "com.example.BatchProcessor.model.Persona")
                     .addString("Fecha",  " " + System.currentTimeMillis())  // Añadimos el parámetro del archivo
                     .toJobParameters();
 

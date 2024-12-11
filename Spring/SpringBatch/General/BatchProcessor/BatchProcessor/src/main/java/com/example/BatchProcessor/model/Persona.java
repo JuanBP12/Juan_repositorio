@@ -1,5 +1,6 @@
 package com.example.BatchProcessor.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 
 /**
@@ -11,22 +12,23 @@ import jakarta.persistence.*;
 public class Persona {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JsonProperty("personaId")
     private Long personaId;
 
+    @JsonProperty("nombreCompleto")
     private String nombreCompleto;
 
-    @ManyToOne
-    @JoinColumn(name = "empleoid")
-    private Empleo empleo;
+    @JsonProperty("empleo")
+    private String empleo;
 
     public Persona() {}
 
-    public Persona(String nombreCompleto, Empleo empleo) {
+    public Persona(String nombreCompleto, String empleo) {
         this.nombreCompleto = nombreCompleto;
         this.empleo = empleo;
     }
 
-    // Getters y Setters
+
     public Long getPersonaId() {
         return personaId;
     }
@@ -43,55 +45,13 @@ public class Persona {
         this.nombreCompleto = nombreCompleto;
     }
 
-    public Empleo getEmpleo() {
+    public String getEmpleo() {
         return empleo;
     }
 
-    public void setEmpleo(Empleo empleo) {
+    public void setEmpleo(String empleo) {
         this.empleo = empleo;
     }
 
-    /**
-     * Clase interna estática que representa un empleo asociado a una persona.
-     */
-    @Entity
-    @Table(name = "empleo")
-    public static class Empleo {
-        @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private Long empleoId;
 
-        private String nombreEmpleo;
-
-        public Empleo() {}
-
-        public Empleo(String nombreEmpleo) {
-            this.nombreEmpleo = nombreEmpleo;
-        }
-
-        // Getters y Setters
-        public Long getEmpleoId() {
-            return empleoId;
-        }
-
-        public void setEmpleoId(Long empleoId) {
-            this.empleoId = empleoId;
-        }
-
-        public String getNombreEmpleo() {
-            return nombreEmpleo;
-        }
-
-        public void setNombreEmpleo(String nombreEmpleo) {
-            this.nombreEmpleo = nombreEmpleo;
-        }
-
-        @Override
-        public String toString() {
-            return "Empleo{" +
-                    "empleoId=" + empleoId +
-                    ", nombreEmpleo='" + nombreEmpleo + '\'' +
-                    '}';
-        }
-    }
 }

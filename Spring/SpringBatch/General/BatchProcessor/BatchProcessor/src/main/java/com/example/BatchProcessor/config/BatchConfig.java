@@ -95,12 +95,12 @@ public class BatchConfig {
     }
 
 
-
     //Archivo
     @Bean(name = "csvItemReader")
-    public CsvItemReader<GenericEntity> csvItemReader() {
-        return new CsvItemReader<>(GenericEntity.class, new FlatFileItemReader<>());
+    public CsvItemReader<?> csvItemReader() {
+        return new CsvItemReader<>();
     }
+
 
     @Bean(name = "csvItemWriter")
     public CsvItemWriter<GenericEntity> csvItemWriter() {

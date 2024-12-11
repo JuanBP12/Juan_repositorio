@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e891fc16-0ec7-44b8-a906-db1fa81be721" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBatch/Por_lotes_enLinea/sin duplicados/BatchProcessor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SpringBatch/Por_lotes_enLinea/sin duplicados/BatchProcessor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/config2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/main/java/com/example/ApiExtractData/ApiExtractDataApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/main/java/com/example/ApiExtractData/assembler/AttributeAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/main/java/com/example/ApiExtractData/assembler/AttributeTypeAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/main/java/com/example/ApiExtractData/assembler/AttributeTypeValueAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/main/java/com/example/ApiExtractData/assembler/ConfigAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/main/java/com/example/ApiExtractData/config/DatabaseConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/main/java/com/example/ApiExtractData/config/SwaggerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/main/java/com/example/ApiExtractData/controller/JsonController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/main/java/com/example/ApiExtractData/dto/AbstractEntityDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/main/java/com/example/ApiExtractData/dto/AttributeDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/main/java/com/example/ApiExtractData/dto/AttributeTypeDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/main/java/com/example/ApiExtractData/dto/AttributeTypeValueDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/main/java/com/example/ApiExtractData/dto/ConfigDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/main/java/com/example/ApiExtractData/model/AbstractEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/main/java/com/example/ApiExtractData/model/Attribute.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/main/java/com/example/ApiExtractData/model/AttributeType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/main/java/com/example/ApiExtractData/model/AttributeTypeValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/main/java/com/example/ApiExtractData/model/Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/main/java/com/example/ApiExtractData/repository/AttributeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/main/java/com/example/ApiExtractData/repository/AttributeTypeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/main/java/com/example/ApiExtractData/repository/AttributeTypeValueRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/main/java/com/example/ApiExtractData/repository/ConfigRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/main/java/com/example/ApiExtractData/service/CustomObjectMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/main/java/com/example/ApiExtractData/service/JsonManagerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/main/resources/META-INF/Persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api1/ApiExtractData/src/test/java/com/example/ApiExtractData/ApiExtractDataApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api2/ApiExtractData/src/main/java/com/example/ApiExtractData/controller/JsonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../api2/ApiExtractData/src/main/java/com/example/ApiExtractData/controller/JsonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api2/ApiExtractData/src/main/java/com/example/ApiExtractData/service/JsonManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../api2/ApiExtractData/src/main/java/com/example/ApiExtractData/service/JsonManagerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/config2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/main/java/com/example/ApiExtractData/ApiExtractDataApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/main/java/com/example/ApiExtractData/assembler/AttributeAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/main/java/com/example/ApiExtractData/assembler/AttributeTypeAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/main/java/com/example/ApiExtractData/assembler/AttributeTypeValueAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/main/java/com/example/ApiExtractData/assembler/ConfigAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/main/java/com/example/ApiExtractData/config/DatabaseConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/main/java/com/example/ApiExtractData/config/SwaggerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/main/java/com/example/ApiExtractData/controller/JsonController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/main/java/com/example/ApiExtractData/dto/AbstractEntityDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/main/java/com/example/ApiExtractData/dto/AttributeDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/main/java/com/example/ApiExtractData/dto/AttributeTypeDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/main/java/com/example/ApiExtractData/dto/AttributeTypeValueDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/main/java/com/example/ApiExtractData/dto/ConfigDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/main/java/com/example/ApiExtractData/model/AbstractEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/main/java/com/example/ApiExtractData/model/Attribute.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/main/java/com/example/ApiExtractData/model/AttributeType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/main/java/com/example/ApiExtractData/model/AttributeTypeValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/main/java/com/example/ApiExtractData/model/Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/main/java/com/example/ApiExtractData/repository/AttributeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/main/java/com/example/ApiExtractData/repository/AttributeTypeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/main/java/com/example/ApiExtractData/repository/AttributeTypeValueRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/main/java/com/example/ApiExtractData/repository/ConfigRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/main/java/com/example/ApiExtractData/service/CustomObjectMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/main/java/com/example/ApiExtractData/service/JsonManagerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/main/resources/META-INF/Persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../api3/api/ApiExtractData/src/test/java/com/example/ApiExtractData/ApiExtractDataApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ApiExtractData/ApiExtractDataApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ApiExtractData/assembler/AttributeAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ApiExtractData/assembler/AttributeTypeAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ApiExtractData/assembler/AttributeTypeValueAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ApiExtractData/assembler/ConfigAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ApiExtractData/config/DatabaseConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ApiExtractData/config/SwaggerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ApiExtractData/controller/JsonController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ApiExtractData/dto/AbstractEntityDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ApiExtractData/dto/AttributeDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ApiExtractData/dto/AttributeTypeDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ApiExtractData/dto/AttributeTypeValueDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ApiExtractData/dto/ConfigDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ApiExtractData/model/AbstractEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ApiExtractData/model/Attribute.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ApiExtractData/model/AttributeType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ApiExtractData/model/AttributeTypeValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ApiExtractData/model/Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ApiExtractData/repository/AttributeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ApiExtractData/repository/AttributeTypeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ApiExtractData/repository/AttributeTypeValueRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ApiExtractData/repository/ConfigRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ApiExtractData/service/CustomObjectMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ApiExtractData/service/JsonManagerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/Persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/ApiExtractData/ApiExtractDataApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ej_json.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../ej_json.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2q4fpYb8a4uAyWta1XqPLmxDCSM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/jbernaldez/Desktop/Juan_repositorio/Spring/SpringBoot/api/api4/ApiExtractData"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e891fc16-0ec7-44b8-a906-db1fa81be721" name="Changes" comment="" />
+      <created>1733926951447</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733926951447</updated>
+    </task>
+    <servers />
+  </component>
+</project>

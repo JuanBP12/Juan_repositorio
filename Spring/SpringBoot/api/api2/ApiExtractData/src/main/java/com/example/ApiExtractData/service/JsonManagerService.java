@@ -24,9 +24,7 @@ import org.springframework.stereotype.Service;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
@@ -358,4 +356,118 @@ public class JsonManagerService {
                 break;
         }
     }
+
+
+    // metodo deserializar datos del json en un objeto
+    /*public void deserialize(String json) throws IOException {
+        // Crear instancia de ObjectMapper
+        ObjectMapper mapper = new ObjectMapper();
+
+        try {
+            // Leer el JSON y convertirlo en un JsonNode
+            JsonNode rootNode = mapper.readTree(json);
+
+            // Iterar sobre el primer nivel (configuraciones principales)
+            Iterator<Map.Entry<String, JsonNode>> rootFields = rootNode.fields();
+            while (rootFields.hasNext()) {
+                Map.Entry<String, JsonNode> field = rootFields.next();
+                String configKey = field.getKey(); // Configuración del primer nivel
+                JsonNode configNode = field.getValue(); // Nodo de configuración que contiene datos anidados
+                JsonNodeType nodeType = configNode.getNodeType(); // Almacenamos el tipo de nodo
+
+                // Crear y configurar el objeto Config
+                Config config = new Config();
+                config.setDescription("Example"); // Asignar configKey como descripción
+                config.setIsCustom(true);  // Valor por defecto o ajustar según necesites
+                config.setDefaultValue("default");
+                config.setApplicationNode(configKey);  // añadimos el nombre de la configuracion
+                config.setParent(null); // ponemos el parent principal a null
+                Config savedConfig = configRepository.save(config); // guardamos la config y la almacenamos en una variable
+
+                switch (nodeType) {
+                    case STRING:
+                        AttributeType attributeType = new AttributeType(); // creamos el objeto attributetypevalue
+                        attributeType.setType(nodeType.name()); // establecemos el tipo de dato en funcion del tipo de nodo
+                        attributeType.setEnumDescription("enumDesc");
+                        attributeType.setIsEnum(false);
+                        attributeType.setIsList(false);
+                        AttributeType savedAttributeType = attributeTypeRepository.save(attributeType);
+
+
+                        AttributeTypeValue attributeTypeValue = new AttributeTypeValue(); // creamos el objeto attributetypevalue
+                        attributeTypeValue.setDescription("Example");
+                        attributeTypeValue.setValue(configNode.textValue()); // Establecemos el valor del attributetypevalue en caso de que sea string
+                        attributeTypeValue.setAttributeType(savedAttributeType);
+                        attributeTypeValueRepository.save(attributeTypeValue);
+
+                        break;
+                    case OBJECT:
+                        // Cuando el valor es un objeto, debemos recorrer sus campos
+                        processObjectNode(configNode, savedConfig); // llamamos al metodo de forma recursiva
+                        break;
+                    default:
+                        // Si el nodo no es un STRING ni un OBJECT, se podría manejar como un tipo desconocido
+                        System.out.println("Nodo de tipo desconocido: " + nodeType);
+                        break;
+                }
+            }
+        } catch (IOException e) {
+            System.err.println("Error deserializing JSON: " + e.getMessage());
+            e.printStackTrace();
+            throw e;
+        }
+    }
+
+    // Metodo recursivo para manejar objetos anidados
+    private void processObjectNode(JsonNode node, Config parentConfig) {
+        Iterator<Map.Entry<String, JsonNode>> fields = node.fields();
+        while (fields.hasNext()) {
+            Map.Entry<String, JsonNode> entry = fields.next();
+            String configOrAttributeKey = entry.getKey();
+            JsonNode configOrAttributeValueNode = entry.getValue();
+            JsonNodeType nodeType = configOrAttributeValueNode.getNodeType();
+
+            Config childConfig = null; // Inicializar childConfig aquí, para usarlo en el bloque recursivo
+
+            if (nodeType == JsonNodeType.OBJECT) {
+                // Guardar config
+                childConfig = new Config();
+                childConfig.setDescription("Example"); // Asignar configKey como descripción
+                childConfig.setIsCustom(true);  // Valor por defecto o ajustar según necesites
+                childConfig.setDefaultValue("default");  // Ajustar según el JSON real
+                childConfig.setApplicationNode(configOrAttributeKey);  // Ajustar según el JSON real
+                childConfig.setParentId(parentConfig.getId());
+                childConfig = configRepository.save(childConfig); // Guardamos el childConfig
+            } else {
+                // Guardar atributo
+                Attribute attribute = new Attribute();
+                attribute.setName(configOrAttributeKey);
+                attribute.setConfig(parentConfig); // Asignamos parentConfig por defecto
+                attributeRepository.save(attribute);
+            }
+
+            // Después de manejar el nodo actual, si es otro objeto, procesarlo recursivamente
+            if (nodeType == JsonNodeType.OBJECT) {
+                // Llamada recursiva: pasamos childConfig en lugar de parentConfig
+                processObjectNode(configOrAttributeValueNode,childConfig);
+            } else if (nodeType == JsonNodeType.STRING || nodeType == JsonNodeType.NUMBER || nodeType == JsonNodeType.BOOLEAN) {
+                createAttributeTypeAndValue(configOrAttributeValueNode, nodeType.name(), "enumDesc");
+            }
+        }
+    }
+
+    private void createAttributeTypeAndValue(JsonNode valueNode, String type, String description) {
+        AttributeType attributeType = new AttributeType();
+        attributeType.setType(type);
+        attributeType.setEnumDescription(description);
+        attributeType.setIsEnum(false);
+        attributeType.setIsList(false);
+        AttributeType savedAttributeType = attributeTypeRepository.save(attributeType);
+
+        AttributeTypeValue attributeTypeValue = new AttributeTypeValue();
+        attributeTypeValue.setDescription("Example");
+        attributeTypeValue.setValue(valueNode.asText());
+        attributeTypeValue.setAttributeType(savedAttributeType);
+        attributeTypeValueRepository.save(attributeTypeValue);
+    }*/
 }

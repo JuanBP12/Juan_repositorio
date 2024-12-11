@@ -104,6 +104,8 @@ Serializar directamente desde la entidad:
   } ]
 }
 
+solo se muestra config
+
 porque habría que descomentar el resto de nodos que están comentados en el método serialice
 
 

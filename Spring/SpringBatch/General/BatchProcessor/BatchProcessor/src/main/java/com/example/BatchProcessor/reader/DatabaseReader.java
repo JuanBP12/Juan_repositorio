@@ -29,9 +29,6 @@ public class DatabaseReader {
         // Asegúrate de que la clase de la entidad no sea nula
         Assert.notNull(entityClass, "Entity class cannot be null");
 
-        // Obtener el EntityManager de la fábrica de entidades
-        EntityManager entityManager = entityManagerFactory.createEntityManager();
-
         // Configurar el lector JPA
         reader.setEntityManagerFactory(entityManagerFactory);
         reader.setPageSize(10);  // Define el tamaño de la página

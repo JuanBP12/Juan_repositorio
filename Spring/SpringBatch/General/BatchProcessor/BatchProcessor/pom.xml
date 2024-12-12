@@ -11,7 +11,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>BatchProcessor</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Soccer</name>
+	<name>BatchProcessor</name>
 	<description>Demo project for Equipos Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>

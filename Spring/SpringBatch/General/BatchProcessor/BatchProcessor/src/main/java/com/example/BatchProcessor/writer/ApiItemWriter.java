@@ -20,11 +20,11 @@ public class ApiItemWriter<T> implements ItemWriter<T> {
     private final RestTemplate restTemplate;
 
     // URL de la API donde se enviarán los datos
-    //@Value("${batch.writer.apiUrl:http://localhost:8080/batch/SavePersonas}")
-    private final String apiUrl = "http://localhost:8081/batch/SavePersonas";
+    private String apiUrl;
 
-    public ApiItemWriter(RestTemplateBuilder restTemplateBuilder) {
-        this.restTemplate = restTemplateBuilder.build();
+    public ApiItemWriter(RestTemplate restTemplate, @Value("${apiToWriteUrl}") String apiUrl) {
+        this.restTemplate = restTemplate;
+        this.apiUrl = apiUrl;
     }
 
     @Override

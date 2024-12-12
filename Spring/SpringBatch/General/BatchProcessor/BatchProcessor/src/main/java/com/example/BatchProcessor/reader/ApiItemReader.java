@@ -25,16 +25,19 @@ import java.util.List;
 public class ApiItemReader<T> implements ItemReader<T> {
 
     private final RestTemplate restTemplate;
-    private final String apiUrl = "http://localhost:8081/batch/personas"; // Esto podría ser configurable.
     private List<T> items;
     private int nextIndex;
     private Class<T> entityType;
+    // URL de la API donde se leeran los datos
+    private String apiUrl;
 
     // Constructor donde el tipo de objeto es pasado como parámetro
-    public ApiItemReader(RestTemplateBuilder restTemplateBuilder) {
-        this.restTemplate = restTemplateBuilder.build();
-        this.items = new ArrayList<>();
-        this.nextIndex = 0;
+    public ApiItemReader(RestTemplate restTemplate, List<T> items, int nextIndex, Class<T> entityType, @Value("${apiToReadUrl}") String apiUrl) {
+        this.restTemplate = restTemplate;
+        this.items = items;
+        this.nextIndex = nextIndex;
+        this.entityType = entityType;
+        this.apiUrl = apiUrl;
     }
 
     @BeforeStep

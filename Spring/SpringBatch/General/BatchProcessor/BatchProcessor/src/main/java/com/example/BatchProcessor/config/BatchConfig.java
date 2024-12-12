@@ -11,7 +11,6 @@ import com.example.BatchProcessor.service.PersonaItemProcessor;
 import com.example.BatchProcessor.writer.ApiItemWriter;
 import com.example.BatchProcessor.writer.CsvItemWriter;
 import com.example.BatchProcessor.writer.DatabaseWriter;
-import com.example.BatchProcessor.writer.PersonaApiWriter;
 import jakarta.persistence.EntityManagerFactory;
 import org.springframework.batch.core.configuration.annotation.StepScope;
 import org.springframework.batch.core.launch.JobLauncher;
@@ -30,8 +29,10 @@ import org.springframework.core.task.SyncTaskExecutor;
 import org.springframework.core.task.TaskExecutor;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.orm.jpa.JpaTransactionManager;
+import org.springframework.web.client.RestTemplate;
 
 import javax.sql.DataSource;
+import java.util.ArrayList;
 import java.util.Map;
 
 
@@ -95,12 +96,11 @@ public class BatchConfig {
     }
 
 
-    //Archivo
+    //ARCHIVO
     @Bean(name = "csvItemReader")
     public CsvItemReader<?> csvItemReader() {
         return new CsvItemReader<>();
     }
-
 
     @Bean(name = "csvItemWriter")
     public CsvItemWriter<GenericEntity> csvItemWriter() {
@@ -125,27 +125,25 @@ public class BatchConfig {
 
 
     //API
-
     // Bean para ApiItemReader genérico
     @Bean(name = "apiItemReader")
-    public ApiItemReader<?> apiItemReader(RestTemplateBuilder restTemplateBuilder) {
-        return new ApiItemReader<>(restTemplateBuilder);
+    public <T> ApiItemReader<T> apiItemReader(RestTemplateBuilder restTemplateBuilder, @Value("${apiToReadUrl}") String apiUrl) {
+        RestTemplate restTemplate = restTemplateBuilder.build(); // Construye el RestTemplate
+        return new ApiItemReader<>(restTemplate, new ArrayList<>(), 0, null, apiUrl); // Inicializa con valores predeterminados
     }
+
 
     // Bean para ApiItemWriter genérico
     @Bean(name = "apiItemWriter")
-    public ApiItemWriter<?> apiItemWriter(RestTemplateBuilder restTemplateBuilder) {
-        return new ApiItemWriter<>(restTemplateBuilder);
-    }
-
-    // Bean para PersonaApiWriter, que es una especialización de ApiItemWriter
-    @Bean(name = "personaApiWriter")
-    public ItemWriter<Persona> personaApiWriter(RestTemplateBuilder restTemplateBuilder) {
-        return new PersonaApiWriter(restTemplateBuilder);
+    public <T> ApiItemWriter<T> apiItemWriter(RestTemplateBuilder restTemplateBuilder, @Value("${apiToWriteUrl}") String apiUrl) {
+        RestTemplate restTemplate = restTemplateBuilder.build(); // Construye el RestTemplate
+        return new ApiItemWriter<>(restTemplate, apiUrl); // Devuelve una instancia genérica de ApiItemWriter
     }
 
 
 
+
+    //PROCESSOR
     // Bean para GenericProcessor
     @Bean(name = "genericProcessor")
     public <T> GenericProcessor<T> genericProcessor() {

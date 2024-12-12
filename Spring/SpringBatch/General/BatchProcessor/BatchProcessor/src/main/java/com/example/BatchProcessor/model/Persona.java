@@ -13,12 +13,15 @@ public class Persona {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonProperty("personaId")
+    @Column(name = "personaId")  // Mapea el atributo "personaId" con la columna "persona_id"
     private Long personaId;
 
     @JsonProperty("nombreCompleto")
+    @Column(name = "nombreCompleto")  // Mapea el atributo "personaId" con la columna "persona_id"
     private String nombreCompleto;
 
     @JsonProperty("empleo")
+    @Column(name = "empleo")  // Mapea el atributo "personaId" con la columna "persona_id"
     private String empleo;
 
     public Persona() {}

@@ -13,6 +13,8 @@ import org.springframework.core.io.ClassPathResource;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -21,6 +23,8 @@ import java.lang.reflect.Field;
 import java.util.*;
 import java.util.stream.Collectors;
 
+@Service
+@Component
 public class CsvItemReader<T> implements ItemReader<T>, ItemStream {
 
     private final FlatFileItemReader<T> delegate;

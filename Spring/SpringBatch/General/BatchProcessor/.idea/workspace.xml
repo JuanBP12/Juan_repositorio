@@ -10,20 +10,66 @@
     <list default="true" id="6885de12-9007-48f2-9614-97a76ba2a7be" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/config/BatchConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/config/BatchConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/controller/BatchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/controller/BatchController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/model/GenericEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/model/GenericEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/model/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/model/Persona.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/ApiItemReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/ApiItemReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/CsvItemReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/CsvItemReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/DatabaseReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/DatabaseReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/service/GenericProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/service/GenericProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/service/PersonaItemProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/service/PersonaItemProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/ApiItemWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/ApiItemWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/CsvItemWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/CsvItemWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/service/PersonaItemProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/resources/input.csv" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/resources/input.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/resources/output.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../avances.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../avances.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../locurilla/BatchProcessor/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../locurilla/BatchProcessor/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../locurilla/BatchProcessor/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../locurilla/BatchProcessor/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../locurilla/BatchProcessor/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../locurilla/BatchProcessor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../locurilla/BatchProcessor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../locurilla/BatchProcessor/BatchProcessor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../locurilla/BatchProcessor/BatchProcessor/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../locurilla/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/BatchProcessorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../locurilla/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/BatchProcessorApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../locurilla/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/BatchConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../locurilla/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/BatchConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../locurilla/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/DataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../locurilla/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/DataSourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../locurilla/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/CsvItemReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../locurilla/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/CsvItemReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../locurilla/BatchProcessor/BatchProcessor/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../locurilla/BatchProcessor/BatchProcessor/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/.idea/BatchProcessor.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/.idea/Soccer - copia.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/.idea/Soccer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/logs/app.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/BatchProcessorApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/BatchConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/BatchJobProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/DataSourceConfigProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/DatabaseConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/MaterialBatchConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/job/ProcessingJob.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/listener/JobCompletionListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/model/GenericEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/model/GenericModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/model/Material.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/CsvItemReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/DatabaseReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/repository/GenericRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/scheduler/BatchScheduler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/service/GenericProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/service/GenericService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/service/MaterialProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/CsvItemWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/DatabaseWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/resources/ventas.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/test/java/com/example/BatchProcessor/BatchProcessorApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_Lotes_Scheduled/Generico/BatchProcessor/logs/app.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Por_lotes_enLinea/sin duplicados/BatchProcessor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Por_lotes_enLinea/sin duplicados/BatchProcessor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_lotes_enLinea/sin duplicados/el_scheduler_lee_de_la_api.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +142,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/jbernaldez/Desktop/Juan_repositorio/Spring/SpringBatch/Por_lotes_enLinea/sin duplicados/BatchProcessor",
+    "last_opened_file_path": "C:/Users/jbernaldez/Desktop/Juan_repositorio/Spring/SpringBatch/General/BatchProcessor",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",

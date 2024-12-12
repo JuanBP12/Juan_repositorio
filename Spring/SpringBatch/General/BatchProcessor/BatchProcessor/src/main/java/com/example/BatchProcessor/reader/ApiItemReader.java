@@ -54,14 +54,13 @@ public class ApiItemReader<T> implements ItemReader<T> {
     @Override
     public T read() {
         if (items.isEmpty()) {
-            // Llamada a la API para obtener los datos y convertirlos al tipo genérico usando ParameterizedTypeReference
-            ParameterizedTypeReference<T[]> typeReference = new ParameterizedTypeReference<T[]>() {};
-            ResponseEntity<T[]> response = restTemplate.exchange(apiUrl, HttpMethod.GET, null, typeReference);
+            // Llamada a la API para obtener los datos
+            ParameterizedTypeReference<List<T>> typeReference = new ParameterizedTypeReference<List<T>>() {};
+            ResponseEntity<List<T>> response = restTemplate.exchange(apiUrl, HttpMethod.GET, null, typeReference);
+
             if (response.getStatusCode().is2xxSuccessful() && response.getBody() != null) {
-                List<T> entityList = Arrays.asList(response.getBody());
-                items = entityList;
+                items = response.getBody();
             } else {
-                // Manejo de errores si no se puede obtener los datos de la API
                 throw new RuntimeException("Error al obtener datos de la API");
             }
         }

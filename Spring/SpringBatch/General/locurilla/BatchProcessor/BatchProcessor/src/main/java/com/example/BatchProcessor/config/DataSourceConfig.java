@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Primary;
 
 import javax.sql.DataSource;
 
-@EnableConfigurationProperties({PrimaryDataSourceProperties.class, SecondaryDataSourceProperties.class,HikariConfigProperties.class})
 @Configuration
 public class DataSourceConfig {
 

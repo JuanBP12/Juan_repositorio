@@ -21,7 +21,6 @@ import org.springframework.batch.core.repository.support.JobRepositoryFactoryBea
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.batch.item.database.JpaPagingItemReader;
-import org.springframework.batch.item.file.FlatFileItemReader;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
@@ -33,6 +32,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.orm.jpa.JpaTransactionManager;
 
 import javax.sql.DataSource;
+import java.util.Map;
 
 
 /**
@@ -146,7 +146,7 @@ public class BatchConfig {
 
 
 
-    //Processor
+    // Bean para GenericProcessor
     @Bean(name = "genericProcessor")
     public <T> GenericProcessor<T> genericProcessor() {
         return new GenericProcessor<>();
@@ -154,7 +154,7 @@ public class BatchConfig {
 
     // Bean para PersonaItemProcessor
     @Bean(name = "personaItemProcessor")
-    public ItemProcessor<Persona, Persona> personaItemProcessor() {
+    public ItemProcessor<Map<String, Object>, Persona> personaItemProcessor() {
         return new PersonaItemProcessor();
     }
 

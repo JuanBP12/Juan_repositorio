@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6885de12-9007-48f2-9614-97a76ba2a7be" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/General/BatchProcessor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/SpringBatch/General/BatchProcessor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/General/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/BatchConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/SpringBatch/General/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/BatchConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/General/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/model/GenericEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/SpringBatch/General/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/model/GenericEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/General/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/model/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/SpringBatch/General/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/model/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/General/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/ApiItemReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/SpringBatch/General/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/ApiItemReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/General/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/service/PersonaItemProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/General/BatchProcessor/BatchProcessor/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/SpringBatch/General/BatchProcessor/BatchProcessor/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/General/BatchProcessor/BatchProcessor/src/main/resources/input.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/SpringBatch/General/BatchProcessor/BatchProcessor/src/main/resources/input.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/General/avances.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/SpringBatch/General/avances.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/General/locurilla/BatchProcessor/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/SpringBatch/General/locurilla/BatchProcessor/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/General/locurilla/BatchProcessor/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/General/locurilla/BatchProcessor/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/SpringBatch/General/locurilla/BatchProcessor/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/General/locurilla/BatchProcessor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/SpringBatch/General/locurilla/BatchProcessor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/General/locurilla/BatchProcessor/BatchProcessor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/SpringBatch/General/locurilla/BatchProcessor/BatchProcessor/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/General/locurilla/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/BatchProcessorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/SpringBatch/General/locurilla/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/BatchProcessorApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/General/locurilla/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/BatchConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/SpringBatch/General/locurilla/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/BatchConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/General/locurilla/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/DataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/SpringBatch/General/locurilla/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/DataSourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/General/locurilla/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/CsvItemReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/SpringBatch/General/locurilla/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/CsvItemReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/General/locurilla/BatchProcessor/BatchProcessor/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/SpringBatch/General/locurilla/BatchProcessor/BatchProcessor/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/.idea/BatchProcessor.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/.idea/Soccer - copia.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/.idea/Soccer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/logs/app.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/BatchProcessorApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/BatchConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/BatchJobProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/DataSourceConfigProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/DatabaseConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/config/MaterialBatchConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/job/ProcessingJob.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/listener/JobCompletionListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/model/GenericEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/model/GenericModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/model/Material.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/CsvItemReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/DatabaseReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/repository/GenericRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/scheduler/BatchScheduler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/service/GenericProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/service/GenericService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/service/MaterialProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/CsvItemWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/DatabaseWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/main/resources/ventas.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/BatchProcessor/src/test/java/com/example/BatchProcessor/BatchProcessorApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_Lotes_Scheduled/Generico/BatchProcessor/logs/app.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_lotes_enLinea/sin duplicados/BatchProcessor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/SpringBatch/Por_lotes_enLinea/sin duplicados/BatchProcessor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/SpringBatch/Por_lotes_enLinea/sin duplicados/el_scheduler_lee_de_la_api.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2mmliCUhNsQdQ0Bv4Bu2qsKWS95" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BatchProcessorApplication.executor": "Run",
+    "JUnit.CsvServiceTest.executor": "Run",
+    "JUnit.CsvServiceTest.procesarEquipos_conArchivoValido_debeRetornarOK.executor": "Run",
+    "JUnit.CsvServiceTest.procesarJugadores_conArchivoVacio_debeRetornarBadRequest.executor": "Run",
+    "JUnit.CsvServiceTest.procesarJugadores_conArchivoValido_debeRetornarOK.executor": "Run",
+    "JUnit.CsvServiceTest.procesarJugadores_conErrorDeLectura_debeRetornarInternalServerError.executor": "Run",
+    "JUnit.CsvServiceTest.procesarJugadores_conErrorLecturaArchivo_debeRetornarErrorInterno.executor": "Run",
+    "JUnit.CsvServiceTest.procesarParticipaciones_conArchivoValido_debeRetornarOK.executor": "Run",
+    "JUnit.EquipoServiceTest.executor": "Run",
+    "JUnit.EquipoServiceTest.findAll_debeRetornarListaDeDTOs.executor": "Run",
+    "JUnit.EquipoServiceTest.findByIdEquipo_debeRetornarEquipoSiExiste.executor": "Run",
+    "JUnit.EquipoServiceTest.findById_debeRetornarDTO.executor": "Run",
+    "JUnit.EquipoServiceTest.updateEquipo_debeActualizarCorrectamente.executor": "Run",
+    "JUnit.JugadorServiceTest.executor": "Run",
+    "JUnit.JugadorServiceTest.findAll.executor": "Run",
+    "JUnit.JugadorServiceTest.findById.executor": "Run",
+    "JUnit.JugadorServiceTest.updateJugador.executor": "Run",
+    "JUnit.ParticipacionServiceTest.executor": "Run",
+    "JUnit.ParticipacionServiceTest.findAll.executor": "Run",
+    "JUnit.ParticipacionServiceTest.findById.executor": "Debug",
+    "JUnit.ParticipacionServiceTest.updateParticipacion.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.BatchProcessorApplication.executor": "Run",
+    "Spring Boot.SoccerApplication.executor": "Run",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/jbernaldez/Desktop/Juan_repositorio/BatchProcessor",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\Juan_repositorio\Spring\BatchProcessor\BatchProcessor\src\main\java\com\example\BatchProcessor" />
+      <recent name="C:\Users\User\Desktop\Juan_repositorio\Spring\BatchProcessor\BatchProcessor\src\main\java\com\example\BatchProcessor\config" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.BatchProcessor.service" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.soccer.service" />
+      <recent name="com.example.soccer.controller" />
+      <recent name="com.example.soccer" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.BatchProcessorApplication">
+    <configuration name="BatchProcessorApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.BatchProcessor.BatchProcessorApplication" />
+      <module name="BatchProcessor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.BatchProcessor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BatchProcessorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="BatchProcessor" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.BatchProcessor.BatchProcessorApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BatchProcessorApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6885de12-9007-48f2-9614-97a76ba2a7be" name="Changes" comment="" />
+      <created>1727689756333</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727689756333</updated>
+      <workItem from="1727689757490" duration="3134000" />
+      <workItem from="1727692909261" duration="4156000" />
+      <workItem from="1727697099629" duration="5889000" />
+      <workItem from="1727761983705" duration="867000" />
+      <workItem from="1727762877857" duration="68000" />
+      <workItem from="1727784227152" duration="26000" />
+      <workItem from="1728023336859" duration="37000" />
+      <workItem from="1728629415248" duration="2726000" />
+      <workItem from="1728633922097" duration="463000" />
+      <workItem from="1728634670691" duration="10270000" />
+      <workItem from="1728646632692" duration="2822000" />
+      <workItem from="1728920065352" duration="241000" />
+      <workItem from="1728920665285" duration="23000" />
+      <workItem from="1729195845470" duration="1804000" />
+      <workItem from="1732125561474" duration="531000" />
+      <workItem from="1732126176267" duration="581000" />
+      <workItem from="1732132297078" duration="10297000" />
+      <workItem from="1732555779092" duration="19000" />
+      <workItem from="1732648326615" duration="1927000" />
+      <workItem from="1732721065307" duration="9091000" />
+      <workItem from="1732736956708" duration="41000" />
+      <workItem from="1732737349788" duration="4437000" />
+      <workItem from="1733856447257" duration="370000" />
+      <workItem from="1733856832357" duration="4668000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

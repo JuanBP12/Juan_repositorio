@@ -4,6 +4,7 @@ import com.example.BatchProcessor.config.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.scheduling.annotation.EnableScheduling;
@@ -16,10 +17,10 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  * 4. Estrategias de procesamiento por lotes   -->	Procesamiento normal durante una ventana de lote en modo fuera de línea
  * 5. Estrategias de confirmación y bloqueo	   -->	Confirmación única al final del procesamiento
  */
-@SpringBootApplication
+
+@SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
 @EnableJpaRepositories(basePackages = "com.example.BatchProcessor.repository")
 @EntityScan(basePackages = "com.example.BatchProcessor.model") // Escanear las entidades
-@EnableConfigurationProperties({HikariConfigProperties.class, PrimaryDataSourceProperties.class,  SecondaryDataSourceProperties.class})
 public class BatchProcessorApplication {
 
 	public static void main(String[] args) {

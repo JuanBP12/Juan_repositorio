@@ -32,11 +32,13 @@ import org.springframework.core.task.TaskExecutor;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
+import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
 import java.sql.SQLException;
+import java.util.Properties;
 
 
 @EnableTransactionManagement
@@ -60,26 +62,30 @@ public class BatchConfig {
 
     @Primary
     @Bean(name = "primaryJdbcTemplate")
-    public JdbcTemplate primaryJdbcTemplate(@Qualifier("primaryDataSource") DataSource primaryDataSource) {
+    public JdbcTemplate primaryJdbcTemplate() {
         return new JdbcTemplate(primaryDataSource);
     }
 
     @Primary
     @Bean(name = "primaryEntityManagerFactory")
-    public LocalContainerEntityManagerFactoryBean primaryEntityManagerFactory(
-            @Qualifier("primaryDataSource") DataSource primaryDataSource,
-            EntityManagerFactoryBuilder builder) {
-        return builder
-                .dataSource(primaryDataSource)
-                .packages("com.example.BatchProcessor.model")
-                .persistenceUnit("firstPU")
-                .build();
+    public LocalContainerEntityManagerFactoryBean primaryEntityManagerFactory() {
+        LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
+        factory.setDataSource(primaryDataSource);
+        factory.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
+        factory.setPackagesToScan("com.example.BatchProcessor.model");
+        Properties jpaProperties = new Properties();
+        jpaProperties.put("hibernate.hbm2ddl.auto", "update"); // O "create", según lo necesites
+        jpaProperties.put("hibernate.dialect", "org.hibernate.dialect.MySQLDialect"); // Asegúrate de usar el dialecto adecuado
+        factory.setJpaProperties(jpaProperties);
+        return factory;
     }
 
     @Primary
     @Bean(name = "primaryTransactionManager")
     public JpaTransactionManager primaryTransactionManager(@Qualifier("primaryEntityManagerFactory") EntityManagerFactory primaryEntityManagerFactory) {
-        return new JpaTransactionManager(primaryEntityManagerFactory);
+        JpaTransactionManager transactionManager = new JpaTransactionManager();
+        transactionManager.setEntityManagerFactory(primaryEntityManagerFactory);
+        return transactionManager;
     }
 
     @Bean(name = "jobRepository")
@@ -97,25 +103,30 @@ public class BatchConfig {
 
 
     @Bean(name = "secondaryJdbcTemplate")
-    public JdbcTemplate secondaryJdbcTemplate(@Qualifier("secondaryDataSource") DataSource secondaryDataSource) {
+    public JdbcTemplate secondaryJdbcTemplate() {
         return new JdbcTemplate(secondaryDataSource);
     }
 
     @Bean(name = "secondEntityManagerFactory")
-    public LocalContainerEntityManagerFactoryBean secondEntityManagerFactory(
-            @Qualifier("secondaryDataSource") DataSource secondaryDataSource,
-            EntityManagerFactoryBuilder builder) {
-        return builder
-                .dataSource(secondaryDataSource)
-                .packages("com.example.BatchProcessor.model")
-                .persistenceUnit("secondPU")
-                .build();
+    public LocalContainerEntityManagerFactoryBean secondEntityManagerFactory() {
+        LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
+        factory.setDataSource(secondaryDataSource);
+        factory.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
+        factory.setPackagesToScan("com.example.BatchProcessor.model"); // Ajusta el paquete si es necesario
+
+        Properties jpaProperties = new Properties();
+        jpaProperties.put("hibernate.hbm2ddl.auto", "update");
+        jpaProperties.put("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
+        factory.setJpaProperties(jpaProperties);
+        return factory;
     }
 
     @Bean(name = "secondTransactionManager")
     public JpaTransactionManager secondTransactionManager(
             @Qualifier("secondEntityManagerFactory") EntityManagerFactory secondEntityManagerFactory) {
-        return new JpaTransactionManager(secondEntityManagerFactory);
+        JpaTransactionManager transactionManager = new JpaTransactionManager();
+        transactionManager.setEntityManagerFactory(secondEntityManagerFactory);
+        return transactionManager;
     }
 
     @Bean(name = "jobRepository2")

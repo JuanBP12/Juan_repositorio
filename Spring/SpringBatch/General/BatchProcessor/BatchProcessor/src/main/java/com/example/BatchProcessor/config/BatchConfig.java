@@ -1,27 +1,17 @@
 package com.example.BatchProcessor.config;
 
 import com.example.BatchProcessor.model.GenericEntity;
-import com.example.BatchProcessor.model.Persona;
-import com.example.BatchProcessor.reader.ApiItemReader;
-import com.example.BatchProcessor.reader.CsvItemReader;
-import com.example.BatchProcessor.reader.DatabaseReader;
+import com.example.BatchProcessor.reader.DatabaseItemReader;
 import com.example.BatchProcessor.repository.GenericRepository;
-import com.example.BatchProcessor.service.GenericProcessor;
-import com.example.BatchProcessor.service.PersonaItemProcessor;
-import com.example.BatchProcessor.writer.ApiItemWriter;
-import com.example.BatchProcessor.writer.CsvItemWriter;
-import com.example.BatchProcessor.writer.DatabaseWriter;
+import com.example.BatchProcessor.writer.DatabaseItemWriter;
 import jakarta.persistence.EntityManagerFactory;
-import org.springframework.batch.core.configuration.annotation.StepScope;
 import org.springframework.batch.core.launch.JobLauncher;
 import org.springframework.batch.core.launch.support.TaskExecutorJobLauncher;
 import org.springframework.batch.core.repository.JobRepository;
 import org.springframework.batch.core.repository.support.JobRepositoryFactoryBean;
-import org.springframework.batch.item.ItemProcessor;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.batch.item.database.JpaPagingItemReader;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
@@ -29,11 +19,8 @@ import org.springframework.core.task.SyncTaskExecutor;
 import org.springframework.core.task.TaskExecutor;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.orm.jpa.JpaTransactionManager;
-import org.springframework.web.client.RestTemplate;
 
 import javax.sql.DataSource;
-import java.util.ArrayList;
-import java.util.Map;
 
 
 /**
@@ -96,7 +83,7 @@ public class BatchConfig {
     }
 
 
-    //ARCHIVO
+    /*//ARCHIVO
     @Bean(name = "csvItemReader")
     public CsvItemReader<?> csvItemReader() {
         return new CsvItemReader<>();
@@ -109,19 +96,6 @@ public class BatchConfig {
 
 
 
-    //DB
-    @StepScope
-    @Bean(name = "databaseItemReader")
-    public JpaPagingItemReader<?> databaseReader(EntityManagerFactory entityManagerFactory,
-                                                 @Value("#{jobParameters['entityClass']}") String entityClassName) throws ClassNotFoundException {
-        return new DatabaseReader().databaseReader(entityManagerFactory, entityClassName);
-    }
-
-    @Bean(name = "databaseItemWriter")
-    public ItemWriter<GenericEntity> databaseItemWriter(GenericRepository genericRepository) {
-        return new DatabaseWriter.ManualItemWriter<>(genericRepository);
-    }
-
 
 
     //API
@@ -132,15 +106,12 @@ public class BatchConfig {
         return new ApiItemReader<>(restTemplate, new ArrayList<>(), 0, null, apiUrl); // Inicializa con valores predeterminados
     }
 
-
     // Bean para ApiItemWriter genérico
     @Bean(name = "apiItemWriter")
     public <T> ApiItemWriter<T> apiItemWriter(RestTemplateBuilder restTemplateBuilder, @Value("${apiToWriteUrl}") String apiUrl) {
         RestTemplate restTemplate = restTemplateBuilder.build(); // Construye el RestTemplate
         return new ApiItemWriter<>(restTemplate, apiUrl); // Devuelve una instancia genérica de ApiItemWriter
     }
-
-
 
 
     //PROCESSOR
@@ -154,6 +125,20 @@ public class BatchConfig {
     @Bean(name = "personaItemProcessor")
     public ItemProcessor<Map<String, Object>, Persona> personaItemProcessor() {
         return new PersonaItemProcessor();
+    }*/
+
+    //DB
+
+
+    @Bean(name = "databaseItemReader")
+    public JpaPagingItemReader<?> databaseReader(EntityManagerFactory entityManagerFactory,
+                                                 @Value("#{jobParameters['entityClass']}") String entityClassName) throws ClassNotFoundException {
+        return new DatabaseItemReader().databaseReader(entityManagerFactory, entityClassName);
+    }
+
+    @Bean(name = "databaseItemWriter")
+    public ItemWriter<GenericEntity> databaseItemWriter(GenericRepository genericRepository) {
+        return new DatabaseItemWriter.ManualItemWriter<>(genericRepository);
     }
 
 }

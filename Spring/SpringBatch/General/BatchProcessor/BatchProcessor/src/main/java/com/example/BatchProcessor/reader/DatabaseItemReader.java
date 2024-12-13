@@ -1,23 +1,17 @@
 package com.example.BatchProcessor.reader;
 
 import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.TypedQuery;
-import jakarta.persistence.criteria.CriteriaBuilder;
-import jakarta.persistence.criteria.CriteriaQuery;
-import jakarta.persistence.criteria.Root;
 import org.springframework.batch.core.configuration.annotation.StepScope;
 import org.springframework.batch.item.database.JpaPagingItemReader;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 
-
-public class DatabaseReader {
+@Component
+@StepScope
+public class DatabaseItemReader {
     // podemos tomar entityClass antes de ejecutar el job gracias a la anotacion @StepScope
-    @Bean
-    @StepScope
+
     public <T> JpaPagingItemReader<T> databaseReader(EntityManagerFactory entityManagerFactory,
                                                      @Value("#{jobParameters['entityClass']}") String entityClassName) throws ClassNotFoundException {
         System.out.println(entityClassName);
@@ -42,6 +36,4 @@ public class DatabaseReader {
 
         return reader;
     }
-
-
 }

@@ -8,13 +8,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6885de12-9007-48f2-9614-97a76ba2a7be" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Api_para_lectura/BatchProcessor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Api_para_lectura/BatchProcessor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Api_para_lectura/BatchProcessor/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Api_para_lectura/BatchProcessor/logs/app.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BatchProcessor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/DatabaseReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/DatabaseReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/repository/PersonaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/BatchProcessorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/BatchProcessorApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/config/BatchConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/config/BatchConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/model/GenericEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/model/GenericEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/model/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/model/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/ApiItemReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/ApiItemReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/CsvItemReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/CsvItemReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/DatabaseReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/DatabaseItemReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/ApiItemWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/ApiItemWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/CsvItemWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/CsvItemWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/DatabaseWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/DatabaseWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/DatabaseWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/DatabaseItemWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/resources/input.csv" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/resources/input.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/resources/output.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Por_lotes_enLinea/sin duplicados/BatchProcessor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Por_lotes_enLinea/sin duplicados/BatchProcessor/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,15 +98,15 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jbernaldez/Desktop/Juan_repositorio/Spring/SpringBatch/Api_para_lectura/BatchProcessor&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Desktop/Juan_repositorio/Spring/SpringBatch/General/Api_para_lectura/BatchProcessor&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -121,7 +132,7 @@
       <recent name="com.example.BatchProcessor.config" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.BatchProcessorApplication">
     <configuration name="BatchProcessorApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.BatchProcessor.BatchProcessorApplication" />
       <module name="BatchProcessor" />
@@ -135,11 +146,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BatchProcessorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="BatchProcessor" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.BatchProcessor.BatchProcessorApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.BatchProcessorApplication" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -173,6 +200,13 @@
       <workItem from="1733852069803" duration="9831000" />
       <workItem from="1733862283804" duration="503000" />
       <workItem from="1734107719539" duration="3000" />
+      <workItem from="1734108325026" duration="710000" />
+      <workItem from="1734109043102" duration="3000" />
+      <workItem from="1734109065814" duration="928000" />
+      <workItem from="1734110042188" duration="20000" />
+      <workItem from="1734110287791" duration="3192000" />
+      <workItem from="1734113632785" duration="490000" />
+      <workItem from="1734114156345" duration="2000" />
     </task>
     <servers />
   </component>
@@ -198,5 +232,15 @@
       <path value="$USER_HOME$" />
       <path value="$PROJECT_DIR$/../../.." />
     </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="jakarta.persistence.PersistenceException" package="jakarta.persistence" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

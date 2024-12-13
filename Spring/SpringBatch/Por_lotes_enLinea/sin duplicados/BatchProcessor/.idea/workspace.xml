@@ -44,55 +44,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.BatchProcessorApplication.executor": "Run",
-    "JUnit.CsvServiceTest.executor": "Run",
-    "JUnit.CsvServiceTest.procesarEquipos_conArchivoValido_debeRetornarOK.executor": "Run",
-    "JUnit.CsvServiceTest.procesarJugadores_conArchivoVacio_debeRetornarBadRequest.executor": "Run",
-    "JUnit.CsvServiceTest.procesarJugadores_conArchivoValido_debeRetornarOK.executor": "Run",
-    "JUnit.CsvServiceTest.procesarJugadores_conErrorDeLectura_debeRetornarInternalServerError.executor": "Run",
-    "JUnit.CsvServiceTest.procesarJugadores_conErrorLecturaArchivo_debeRetornarErrorInterno.executor": "Run",
-    "JUnit.CsvServiceTest.procesarParticipaciones_conArchivoValido_debeRetornarOK.executor": "Run",
-    "JUnit.EquipoServiceTest.executor": "Run",
-    "JUnit.EquipoServiceTest.findAll_debeRetornarListaDeDTOs.executor": "Run",
-    "JUnit.EquipoServiceTest.findByIdEquipo_debeRetornarEquipoSiExiste.executor": "Run",
-    "JUnit.EquipoServiceTest.findById_debeRetornarDTO.executor": "Run",
-    "JUnit.EquipoServiceTest.updateEquipo_debeActualizarCorrectamente.executor": "Run",
-    "JUnit.JugadorServiceTest.executor": "Run",
-    "JUnit.JugadorServiceTest.findAll.executor": "Run",
-    "JUnit.JugadorServiceTest.findById.executor": "Run",
-    "JUnit.JugadorServiceTest.updateJugador.executor": "Run",
-    "JUnit.ParticipacionServiceTest.executor": "Run",
-    "JUnit.ParticipacionServiceTest.findAll.executor": "Run",
-    "JUnit.ParticipacionServiceTest.findById.executor": "Debug",
-    "JUnit.ParticipacionServiceTest.updateParticipacion.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.BatchProcessorApplication.executor": "Run",
-    "Spring Boot.SoccerApplication.executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/jbernaldez/Desktop/Juan_repositorio/Spring/SpringBatch/General/BatchProcessor",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.BatchProcessorApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CsvServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CsvServiceTest.procesarEquipos_conArchivoValido_debeRetornarOK.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CsvServiceTest.procesarJugadores_conArchivoVacio_debeRetornarBadRequest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CsvServiceTest.procesarJugadores_conArchivoValido_debeRetornarOK.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CsvServiceTest.procesarJugadores_conErrorDeLectura_debeRetornarInternalServerError.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CsvServiceTest.procesarJugadores_conErrorLecturaArchivo_debeRetornarErrorInterno.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CsvServiceTest.procesarParticipaciones_conArchivoValido_debeRetornarOK.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EquipoServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EquipoServiceTest.findAll_debeRetornarListaDeDTOs.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EquipoServiceTest.findByIdEquipo_debeRetornarEquipoSiExiste.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EquipoServiceTest.findById_debeRetornarDTO.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EquipoServiceTest.updateEquipo_debeActualizarCorrectamente.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JugadorServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JugadorServiceTest.findAll.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JugadorServiceTest.findById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JugadorServiceTest.updateJugador.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParticipacionServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParticipacionServiceTest.findAll.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParticipacionServiceTest.findById.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.ParticipacionServiceTest.updateParticipacion.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BatchProcessorApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SoccerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jbernaldez/Desktop/Juan_repositorio/Spring/SpringBatch/General/BatchProcessor&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\Desktop\Juan_repositorio\Spring\BatchProcessor\BatchProcessor\src\main\java\com\example\BatchProcessor" />
@@ -137,6 +137,14 @@
         <item itemvalue="Application.BatchProcessorApplication" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

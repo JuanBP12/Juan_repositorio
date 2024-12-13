@@ -5,27 +5,26 @@ import com.example.BatchProcessor.repository.GenericRepository;
 import org.springframework.batch.core.configuration.annotation.StepScope;
 import org.springframework.batch.item.Chunk;
 import org.springframework.batch.item.ItemWriter;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 
 import java.util.List;
 
-public class DatabaseWriter {
+@Component
+public class DatabaseItemWriter {
 
 
     private ApplicationContext applicationContext; // Inyectar el contexto de la aplicación
 
-    public DatabaseWriter(ApplicationContext applicationContext) {
+
+    public DatabaseItemWriter(ApplicationContext applicationContext) {
         this.applicationContext = applicationContext;
     }
-
-    @Bean
     @StepScope
     public <T extends GenericEntity> ManualItemWriter<T> databaseWriter(
-            @Value("#{jobParameters['entityClass']}") Class<T> clazz) {
+            @Value("{jobParameters['entityClass']}") Class<T> clazz) {
         // Asegúrate de que la clase de la entidad no sea nula
         Assert.notNull(clazz, "Entity class cannot be null");
 

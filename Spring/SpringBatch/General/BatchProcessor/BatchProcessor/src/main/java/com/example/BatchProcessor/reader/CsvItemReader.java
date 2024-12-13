@@ -67,9 +67,6 @@ public class CsvItemReader<T> extends StepExecutionListenerSupport implements It
         // Crear y configurar el FlatFileItemReader
         this.delegate = new FlatFileItemReader<>();
 
-        // Convertir el nombre de la clase a Class<T>
-        this.entityType = (Class<T>) Class.forName(entityClassName);
-
         // Validar encabezados
         List<String> headers = extractHeaders(filePath);
         validateHeadersAgainstEntity(headers);

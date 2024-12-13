@@ -22,8 +22,9 @@ public class ApiItemWriter<T> implements ItemWriter<T> {
     // URL de la API donde se enviarán los datos
     private String apiUrl;
 
-    public ApiItemWriter(RestTemplate restTemplate, @Value("${apiToWriteUrl}") String apiUrl) {
-        this.restTemplate = restTemplate;
+
+    public ApiItemWriter(RestTemplateBuilder restTemplateBuilder, @Value("${apiToWriteUrl}") String apiUrl) {
+        this.restTemplate = restTemplateBuilder.build();
         this.apiUrl = apiUrl;
     }
 

@@ -23,20 +23,17 @@ import java.util.List;
  */
 @Component
 public class ApiItemReader<T> implements ItemReader<T> {
-
     private final RestTemplate restTemplate;
     private List<T> items;
-    private int nextIndex;
+    private int nextIndex=0;
     private Class<T> entityType;
     // URL de la API donde se leeran los datos
     private String apiUrl;
 
     // Constructor donde el tipo de objeto es pasado como parámetro
-    public ApiItemReader(RestTemplate restTemplate, List<T> items, int nextIndex, Class<T> entityType, @Value("${apiToReadUrl}") String apiUrl) {
-        this.restTemplate = restTemplate;
+    public ApiItemReader(RestTemplateBuilder restTemplateBuilder, List<T> items, @Value("${apiToReadUrl}") String apiUrl) {
+        this.restTemplate = restTemplateBuilder.build();
         this.items = items;
-        this.nextIndex = nextIndex;
-        this.entityType = entityType;
         this.apiUrl = apiUrl;
     }
 

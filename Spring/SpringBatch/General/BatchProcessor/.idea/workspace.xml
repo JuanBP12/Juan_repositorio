@@ -8,24 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6885de12-9007-48f2-9614-97a76ba2a7be" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Api_para_lectura/BatchProcessor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Api_para_lectura/BatchProcessor/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Api_para_lectura/BatchProcessor/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Api_para_lectura/BatchProcessor/logs/app.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchProcessor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/BatchProcessorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/BatchProcessorApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/config/BatchConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/config/BatchConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/model/GenericEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/model/GenericEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/model/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/model/Persona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/ApiItemReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/ApiItemReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/CsvItemReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/CsvItemReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/DatabaseReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/reader/DatabaseItemReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/ApiItemWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/ApiItemWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/CsvItemWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/CsvItemWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/DatabaseWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/DatabaseItemWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/resources/input.csv" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/resources/input.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/resources/output.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Por_lotes_enLinea/sin duplicados/BatchProcessor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Por_lotes_enLinea/sin duplicados/BatchProcessor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/DatabaseItemWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchProcessor/src/main/java/com/example/BatchProcessor/writer/DatabaseItemWriter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +82,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Desktop/Juan_repositorio/Spring/SpringBatch/General/Api_para_lectura/BatchProcessor&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Desktop/BatchProcessor&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -207,6 +191,9 @@
       <workItem from="1734110287791" duration="3192000" />
       <workItem from="1734113632785" duration="490000" />
       <workItem from="1734114156345" duration="2000" />
+      <workItem from="1734117630053" duration="1122000" />
+      <workItem from="1734118807485" duration="2838000" />
+      <workItem from="1734121885974" duration="69000" />
     </task>
     <servers />
   </component>

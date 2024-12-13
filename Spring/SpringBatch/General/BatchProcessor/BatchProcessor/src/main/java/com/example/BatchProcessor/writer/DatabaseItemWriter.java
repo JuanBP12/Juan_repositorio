@@ -7,6 +7,7 @@ import org.springframework.batch.item.Chunk;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 
@@ -22,9 +23,10 @@ public class DatabaseItemWriter {
     public DatabaseItemWriter(ApplicationContext applicationContext) {
         this.applicationContext = applicationContext;
     }
+
     @StepScope
     public <T extends GenericEntity> ManualItemWriter<T> databaseWriter(
-            @Value("{jobParameters['entityClass']}") Class<T> clazz) {
+            @Value("#{jobParameters['entityClass']}") Class<T> clazz) {
         // Asegúrate de que la clase de la entidad no sea nula
         Assert.notNull(clazz, "Entity class cannot be null");
 

@@ -5,26 +5,26 @@ define tu clase entidad Especifica
 
 
 2:
-define el csv en el archivo input.csv que se encuentra en java/resources con los datos a procesar(en caso de leer o escribir de un csv) 
+define la ruta csv con los datos a procesar desde el archivo aplication.properties que se encuentra en java/resources (en caso de leer o escribir de un csv) 
 propiedades a modificar:
 
 csv.file.path=input.csv
 csv.output.file.path=BatchProcessor//src//main//resources//output.csv
 
 
-o define la url en la que se encuentra el endpoint al que atacamos en el archivo input.csv, que se encuentra en java/resources.(en caso de leer o escribir de una api) 
+o define la url del endpoint al que atacamos desde el archivo aplication.properties que se encuentra en java/resources (en caso de leer o escribir de una api) 
 propiedades a modificar:
 
 apiToReadUrl=http://localhost:8081/batch/personas
 apiToWriteUrl=http://localhost:8081/batch/SavePersonas
  
 //En el caso de leer de la api no hace falta configurar la entidad de job parameters podemos dejar la generica 
-//y es obligatorio usar el bean personaItemProcessor salvo cuando leemos de api y escribamos en api a no ser que los datos del modelo no coincidan 
+//y es obligatorio usar el bean personaItemProcessor salvo cuando leemos de api y escribamos en api a no ser que los datos del modelo no coincidan entre ambas apis
 //si utilizas otra clase especifica deberas crear un procesor que mapee la respuesta para que tenga el formato rquerido
 
 
 3:
-Define el tipo de entidad de aplication.properties que se encuentra en java/resources, de esta manera especificamos el tipo de entidad que se debe guardar en los .jobparameters
+Define el tipo de entidad desde el archivo aplication.properties que se encuentra en java/resources, de esta manera especificamos el tipo de entidad que se debe guardar en los .jobparameters
 propiedades a modificar:
 
 entityClass=com.example.BatchProcessor.model.GenericEntity //para clase generica    o   .Persona  //para clase Persona
@@ -159,31 +159,6 @@ se lee de una api y se escribe en una tabla de la base de datos //requiere usar 
 falta:
 
 se lee de una base de datos y se escribe en otra
-
-
-
-ej lectura:
-
-// Lectura generica
-id,data
-1,Producto A
-2,Producto B
-3,Producto C
-4,Producto D
-5,Producto E
-
-// Lectura para personas
-personaId,nombreCompleto,empleo
-1,Juan Pérez,
-2,Ana García,Diseñador
-3,Luis López,Desarrollador
-4,Marta Fernández,Analista
-5,Carlos Gómez,Desarrollador
-6,Elena Ruiz,Diseñador
-7,Roberto Sánchez,Analista
-8,Lucía Moreno,Gerente
-9,Mario Ramírez,Gerente
-10,Sofía Castro,Diseñador
 
 
 

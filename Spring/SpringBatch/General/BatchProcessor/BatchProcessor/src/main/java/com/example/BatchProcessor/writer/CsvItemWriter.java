@@ -58,7 +58,6 @@ public class CsvItemWriter<T> implements ItemWriter<T> {
 
         CsvSchema reversedSchema = schemaBuilder.setUseHeader(true).build().withoutQuoteChar(); // eliminar comillas y añadir header
 
-
         // Crear archivo y escribir los datos
         File file = new File(outputPath);
         try (FileWriter fileWriter = new FileWriter(file, true)) {

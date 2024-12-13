@@ -5,6 +5,7 @@ import com.example.BatchProcessor.repository.GenericRepository;
 import org.springframework.batch.core.configuration.annotation.StepScope;
 import org.springframework.batch.item.Chunk;
 import org.springframework.batch.item.ItemWriter;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -16,6 +17,10 @@ public class DatabaseWriter {
 
 
     private ApplicationContext applicationContext; // Inyectar el contexto de la aplicación
+
+    public DatabaseWriter(ApplicationContext applicationContext) {
+        this.applicationContext = applicationContext;
+    }
 
     @Bean
     @StepScope
@@ -57,7 +62,11 @@ public class DatabaseWriter {
             }
 
             // Guardar todos los elementos utilizando el repositorio
-            genericRepository.saveAll(items);
+            try {
+                genericRepository.saveAll(items);
+            } catch (Exception e) {
+                throw new Exception("Error al guardar los elementos en la base de datos", e);
+            }
         }
     }
 }

@@ -29,15 +29,12 @@ public class DatabaseReader {
         // Asegúrate de que la clase de la entidad no sea nula
         Assert.notNull(entityClass, "Entity class cannot be null");
 
-        // Obtener el EntityManager de la fábrica de entidades
-        EntityManager entityManager = entityManagerFactory.createEntityManager();
-
         // Configurar el lector JPA
         reader.setEntityManagerFactory(entityManagerFactory);
         reader.setPageSize(10);  // Define el tamaño de la página
         reader.setSaveState(false);  // Desactivar guardado de estado si no lo necesitas
 
-        // Usamos JPQL en lugar de Criteria
+        // Usamos JPQL
         String jpqlQuery = "SELECT e FROM " + entityClass.getSimpleName() + " e";
 
         // Establecer el queryString al lector

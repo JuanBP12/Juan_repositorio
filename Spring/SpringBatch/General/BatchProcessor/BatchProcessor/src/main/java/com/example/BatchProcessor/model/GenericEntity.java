@@ -20,23 +20,4 @@ public class GenericEntity {
 
     @Column
     private String data;
-
-    // Métodos para serialización/deserialización
-    public <T> T getData(Class<T> clazz) {
-        ObjectMapper mapper = new ObjectMapper();
-        try {
-            return mapper.readValue(data, clazz);
-        } catch (JsonProcessingException e) {
-            throw new RuntimeException("Error deserializing data", e);
-        }
-    }
-
-    public <T> void setData(T obj) {
-        ObjectMapper mapper = new ObjectMapper();
-        try {
-            this.data = mapper.writeValueAsString(obj);
-        } catch (JsonProcessingException e) {
-            throw new RuntimeException("Error serializing data", e);
-        }
-    }
 }

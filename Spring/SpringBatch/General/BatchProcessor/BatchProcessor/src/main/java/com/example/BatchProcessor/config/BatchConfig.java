@@ -124,6 +124,7 @@ public class BatchConfig {
 
 
 
+
     //API
     // Bean para ApiItemReader genérico
     @Bean(name = "apiItemReader")
@@ -131,7 +132,6 @@ public class BatchConfig {
         RestTemplate restTemplate = restTemplateBuilder.build(); // Construye el RestTemplate
         return new ApiItemReader<>(restTemplate, new ArrayList<>(), 0, null, apiUrl); // Inicializa con valores predeterminados
     }
-
 
     // Bean para ApiItemWriter genérico
     @Bean(name = "apiItemWriter")
